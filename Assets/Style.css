@@ -20,7 +20,7 @@
     font-family: Urbanist;
     font-size: 20px;
     font-weight: 600;
-    line-height: 15px;
+    line-height: 13px;
     text-align: left;
     margin: 0 8px;
 }
@@ -967,8 +967,8 @@
 }
 
 .our-cards .our-card {
-    width: 150px;
-    height: 150px;
+    width: 158px;
+    height: 160px;
     border-radius: 10px;
     background: #FFFFFF91;
     border: 1px solid #58595B1C;
@@ -991,9 +991,9 @@
     color: #58595B;
 }
 
-.our-manufactur-cards {
+/* .our-manufactur-cards {
     margin-top: 50px;
-}
+} */
 
 .our-manufactur-cards table {
     width: 70%;
@@ -1013,7 +1013,7 @@
 
 
 .bulding-section {
-    margin-top: 150px;
+    margin-top: 100px;
     /* height: 450px; */
 }
 
@@ -1269,7 +1269,7 @@ bottom: 21px;
 }
 
 .latest-slider {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 
