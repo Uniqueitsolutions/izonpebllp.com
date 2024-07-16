@@ -640,7 +640,9 @@
     height: 600px;
 }
 
-.about-img1, .about-img2, .about-img3 {
+.about-img1,
+.about-img2,
+.about-img3 {
     position: absolute;
     filter: drop-shadow(7px 0px 10px rgba(0, 0, 0, 0.25)) drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
@@ -900,22 +902,26 @@
         padding-bottom: 0;
         /* Remove aspect ratio padding */
     }
-    .what-section .what-txt .what-btn{
+
+    .what-section .what-txt .what-btn {
         margin-bottom: 50px;
     }
 }
+
 @media (max-width: 1165px) and (min-width: 769px) {
     .what-section .what-img {
         height: 100%;
         padding-bottom: 0;
         /* Remove aspect ratio padding */
     }
-    .what-section .what-txt .what-btn{
+
+    .what-section .what-txt .what-btn {
         margin-bottom: 50px;
     }
 }
+
 @media(max-width: 769px) {
-    .what-section .what-txt .what-btn{
+    .what-section .what-txt .what-btn {
         margin-bottom: 50px;
     }
 }
@@ -934,19 +940,13 @@
 
     --------------------------------------------------------------------------*/
 
-
-
-
-
-
-
-
 .our-manufactur {
     margin-top: 60px;
     ;
 }
 
 .our-manufactur .our-title {
+    margin: 0;
     font-family: Urbanist;
     font-size: 39px;
     font-weight: 800;
@@ -1008,5 +1008,468 @@
 /* ---------------------------------------------------------------------------
 
                                vedio  multi bulding  component start
+
+    --------------------------------------------------------------------------*/
+
+
+.bulding-section {
+    margin-top: 150px;
+    /* height: 450px; */
+}
+
+.bulding-section .bulding-vedio {
+    padding: 0;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.bulding-section .video-txt {
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 15px;
+    text-align: left;
+    color: #FFFFFF;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+}
+
+.bulding-section .bulding-vedio .play-btn-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 80px;
+    height: 80px;
+    background-color: #EF4136;
+    border: 1px solid #EF4136;
+    box-shadow: 0px 4px 15px 0px #00000045;
+
+}
+
+.bulding-section .bulding-vedio img {
+    padding: 0;
+    height: 100%;
+}
+
+.bulding-section .bulding-vedio .trans-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bulding-section .bulding-txt {
+    background: #58595B38;
+}
+
+.bulding-section .bulding-txt .bulding-title {
+    font-family: Urbanist;
+    font-size: 34px;
+    font-weight: 700;
+    color: #EF4136;
+    margin-top: 120px;
+
+}
+
+.bulding-section .bulding-txt .bulding-para1 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+    width: 460px;
+    /* responsive ma width ne kadhi nakhvanai 6e etle set thai jase component */
+    text-align: left;
+    margin-top: 50px;
+}
+
+.bulding-section .bulding-txt .bulding-para2 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+    width: 460px;
+    /* responsive ma width ne kadhi nakhvanai 6e etle set thai jase component */
+    text-align: left;
+    margin-top: 30px;
+}
+
+.bulding-section .bulding-txt .bulding-btn {
+
+    font-family: Urbanist;
+    background: #EF4136;
+    margin-top: 28px;
+    margin-right: 68px;
+    font-weight: 800;
+    padding: 8px 13px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    box-shadow: 0px 4px 20px 1px #00000040;
+}
+
+/* ---------------------------------------------------------------------------
+
+                               vedio  multi bulding  component end
+
+    --------------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------
+
+                               Latest Project component start
+
+    --------------------------------------------------------------------------*/
+
+/* .latest-project {
+        width: 435px;
+        position: relative;
+    }
+    .latest-project .right-icon{
+        color: #ffffff;
+position: absolute;
+right: 38px;
+font-size: 22px;
+bottom: 21px;
+    }
+
+    .latest-img {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 90.4%);
+        border-radius: 12px;
+        width: 435px;
+    }
+
+    .latest-shadow {
+        width: 435px;
+        height: 163px;
+        position: absolute;
+        top: 126px;
+        left: 1px;
+        gap: 0px;
+        border-radius: 15px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000e3 90.4%);
+    }
+
+    .latest-title {
+        position: absolute;
+        bottom: 0px;
+        font-family: Urbanist;
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFFFFF;
+        left: 28px;
+
+    }
+ */
+
+
+
+.latest-project {
+    max-width: 435px;
+    position: relative;
+}
+
+.latest-project .right-icon {
+    color: #ffffff;
+    position: absolute;
+    right: 38px;
+    font-size: 22px;
+    bottom: 21px;
+}
+
+.latest-img {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 90.4%);
+    border-radius: 12px;
+    width: 435px;
+}
+
+.latest-shadow {
+    width: 100%;
+    height: 164px;
+    position: absolute;
+    top: 125px;
+    left: 0px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000e3 90.4%);
+}
+
+.latest-title {
+    position: absolute;
+    bottom: 0px;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    left: 28px;
+}
+
+.swiper-button-next {
+
+    font-size: xxx-large;
+    background-color: red;
+    width: 75px;
+    height: 53px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-prev {
+
+    font-size: xxx-large;
+    background-color: red;
+    width: 75px;
+    height: 53px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-next {
+    font-weight: bolder;
+    /* padding-left: 20px; */
+    right: -32px;
+}
+
+.swiper-button-prev {
+    font-weight: bolder;
+    left: -40px;
+    padding-left: 27px;
+}
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-container-l {
+    padding: 0 32px;
+    margin-left: 0px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        padding: 5px;
+    }
+}
+
+.latest-slider {
+    margin-top: 50px;
+}
+
+
+/* ---------------------------------------------------------------------------
+
+                               Latest Project component end
+
+    --------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------
+
+                               our clients component start
+
+    --------------------------------------------------------------------------*/
+
+.clients-title {
+    margin-top: 50px;
+    font-family: Urbanist;
+    font-size: 39px;
+    font-weight: 800;
+    color: #EF4136;
+}
+
+.our-clients {
+    margin-top: 100px;
+    background: #58595B38;
+
+}
+
+.client-logo .our-client1 {
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 4px 0px 10px 0px #00000026;
+    border-radius: 15px;
+    display: flex;
+}
+
+.client-logo .our-client1 img {
+    width: 160px;
+    height: 80px;
+}
+
+.client-logo {
+    padding-bottom: 52px;
+    padding-top: 26px;
+    row-gap:30px
+}
+
+
+/* ---------------------------------------------------------------------------
+
+                               our clients component end
+
+    --------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------
+
+                               testimonials component start
+
+    --------------------------------------------------------------------------*/
+
+
+.tesimonails-card {
+    margin-bottom: 50px;
+    margin-left: 25px;
+    max-width: 542px;
+    /* height: 189px; */
+    background-color: #EF4136;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.tesimonails-card .testimonial-title {
+    margin: 0;
+    font-family: Urbanist;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.tesimonails-card .testimonial-subtitle {
+    margin: 0;
+    font-family: Urbanist;
+    font-size: 21px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.tesimonails-card .testi-txt {
+    padding: 33px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tesimonails-card .testi-quata i {
+    rotate: 180deg;
+    color: white;
+    font-size: 50px;
+}
+
+.tesimonails-card .testi-para {
+    padding: 0px 40px;
+    font-family: Poppins;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 38px;
+}
+
+/* @media (max-width: 1200px) {
+    .swiper-container {
+        width: 100%;
+    }
+
+    .tesimonails-card {
+        margin-left: 1%;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .testi-txt {
+        padding: 1.5em 2em;
+    }
+
+    .tesimonails-card .testimonial-title {
+        font-size: 1.5rem;
+        24px
+    }
+
+    .tesimonails-card .testimonial-subtitle {
+        font-size: 1rem;
+        16px
+    }
+
+    .tesimonails-card .testi-para {
+        padding: 0 2em;
+        font-size: 1rem;
+        16px
+        padding-bottom: 2em;
+        32px
+    }
+}
+
+@media (max-width: 768px) {
+    .testi-txt {
+        padding: 1.5em 1.5em;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tesimonails-card .testimonial-title {
+        font-size: 1.25rem;
+        20px
+    }
+
+    .tesimonails-card .testimonial-subtitle {
+        font-size: 0.875rem;
+    
+    }
+
+    .tesimonails-card .testi-para {
+        padding: 0 1.5em;
+        font-size: 0.9375rem;
+        padding-bottom: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .tesimonails-card {
+        margin-left: 0.5%;
+        max-width: 98%;
+    }
+
+    .tesimonails-card .testimonial-title {
+        font-size: 1rem;
+    
+    }
+
+    .tesimonails-card .testimonial-subtitle {
+        font-size: 0.75rem;
+    
+    }
+
+    .tesimonails-card .testi-para {
+        font-size: 0.875rem;
+    
+    }
+} */
+
+/* ---------------------------------------------------------------------------
+
+                               testimonials component end
+
+    --------------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------
+
+                              footer component end
 
     --------------------------------------------------------------------------*/
