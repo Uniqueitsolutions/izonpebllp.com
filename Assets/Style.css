@@ -9,10 +9,11 @@
     height: 52px;
     margin-top: 16px;
     margin-bottom: 16px;
+    padding: 0px 28px;
 }
 
 .navbar div img {
-    margin-left: 36px;
+    margin-left: 22px;
     margin-top: 24px;
 }
 
@@ -948,14 +949,14 @@
 .our-manufactur .our-title {
     margin: 0;
     font-family: Urbanist;
-    font-size: 39px;
+    font-size: 36px;
     font-weight: 800;
     color: #EF4136;
 }
 
 .our-manufactur .our-para {
     padding-top: 30px;
-    width: 750px;
+    width: 730px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
@@ -996,7 +997,7 @@
 } */
 
 .our-manufactur-cards table {
-    width: 70%;
+    width: 75%;
 }
 
 /* ---------------------------------------------------------------------------
@@ -1030,20 +1031,23 @@
     font-size: 24px;
     font-weight: 900;
     line-height: 15px;
-    text-align: left;
+    /* text-align: left; */
     color: #FFFFFF;
-    position: absolute;
-    top: 65%;
-    left: 35%;
+    /* position: absolute; */
+    /* top: 65%; */
+    /* left: 35%; */
+    /* margin: auto; */
+    margin-top: 10PX;
+
 }
 
 .bulding-section .bulding-vedio .play-btn-bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 40%;
+    left: 40%; */
     width: 80px;
     height: 80px;
     background-color: #EF4136;
@@ -1058,6 +1062,7 @@
 }
 
 .bulding-section .bulding-vedio .trans-bg {
+    width: 70%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1374,7 +1379,7 @@ bottom: 21px;
 .tesimonails-card .testi-para {
     padding: 0px 40px;
     font-family: Poppins;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 17px;
     font-weight: 400;
     color: white;

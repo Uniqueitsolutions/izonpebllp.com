@@ -19,6 +19,7 @@
     <style>
         .footer {
             position: relative;
+            margin-top: 50px;
         }
 
         .footer-bg {
@@ -139,11 +140,21 @@
 
         @media (min-width:1260px) and (max-width: 1800px) {
             .testi-container .swiper-container {
-                /* padding: 0 20px; */
+                padding: 0 20px;
                 overflow: hidden;
                 width: 1200px;
                 margin: auto;
             }
+        }
+        .video-detail{
+            display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
         }
     </style>
 </head>
@@ -498,8 +509,8 @@
                 <img src="Assets/images/bg-vedio.webp" class="img-fluid vedio-bg m-auto" data-aos="fade-up" alt="">
                 <img src="Assets/images/transparent-bg.png" class="trans-bg m-auto" data-aos="fade-up-right"
                     data-aos-delay="400" alt="">
-                <div>
-                    <div class="play-btn-bg rounded-circle m-auto" data-aos="fade-up-right" data-aos-delay="400">
+                <div class="video-detail">
+                    <div class="play-btn-bg rounded-circle" data-aos="fade-up-right" data-aos-delay="400">
                         <svg width="35" height="35" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="29" height="29" fill="url(#pattern0_259_47)" />
