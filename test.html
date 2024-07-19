@@ -148,9 +148,103 @@
 
     </div>
 
+
+
   
 
     
+  </section>
+
+  <section class="container">
+    <div class="row ">
+      <div class="col-md-12">
+          <div class="container-fluid latest-slider">
+              <div class="row">
+                  <div class="col-md-12 testi-container position-relative">
+                      <div class="swiper-container">
+                          <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="200"
+                              data-aos-duration="400" style=" ">
+                              <div class="swiper-slide tesimonails-card">
+                                  <div class="testi-txt">
+                                      <div class="testi-title">
+                                          <p class="testimonial-title">Arpit Padmani</p>
+                                          <p class="testimonial-subtitle">Nestiles</p>
+                                      </div>
+                                      <div class="testi-quata">
+                                          <i class="fa fa-quote-left"></i>
+                                      </div>
+                                  </div>
+                                  <p class="testi-para">“ The main framing basically includes the
+                                      rigid steel frames of the building. The
+                                      PESB rigid frame comprises tapered
+                                      columns and tapered rafters. Flanges
+                                      shall be connected to webs by means
+                                      of a continuous fillet weld on one side.”</p>
+                              </div>
+                              <div class="swiper-slide tesimonails-card">
+                                  <div class="testi-txt">
+                                      <div class="testi-title">
+                                          <p class="testimonial-title">Arpit Padmani</p>
+                                          <p class="testimonial-subtitle">Nestiles</p>
+                                      </div>
+                                      <div class="testi-quata">
+                                          <i class="fa fa-quote-left"></i>
+                                      </div>
+                                  </div>
+                                  <p class="testi-para">“ The main framing basically includes the
+                                      rigid steel frames of the building. The
+                                      PESB rigid frame comprises tapered
+                                      columns and tapered rafters. Flanges
+                                      shall be connected to webs by means
+                                      of a continuous fillet weld on one side.”</p>
+                              </div>
+                              <div class="swiper-slide tesimonails-card">
+                                  <div class="testi-txt">
+                                      <div class="testi-title">
+                                          <p class="testimonial-title">Arpit Padmani</p>
+                                          <p class="testimonial-subtitle">Nestiles</p>
+                                      </div>
+                                      <div class="testi-quata">
+                                          <i class="fa fa-quote-left"></i>
+                                      </div>
+                                  </div>
+                                  <p class="swiper-slide testi-para">“ The main framing basically includes the
+                                      rigid steel frames of the building. The
+                                      PESB rigid frame comprises tapered
+                                      columns and tapered rafters. Flanges
+                                      shall be connected to webs by means
+                                      of a continuous fillet weld on one side.”</p>
+                              </div>
+                              <div class="swiper-slide tesimonails-card">
+                                  <div class="testi-txt">
+                                      <div class="testi-title">
+                                          <p class="testimonial-title">Arpit Padmani</p>
+                                          <p class="testimonial-subtitle">Nestiles</p>
+                                      </div>
+                                      <div class="testi-quata">
+                                          <i class="fa fa-quote-left"></i>
+                                      </div>
+                                  </div>
+                                  <p class="swiper-slide testi-para">“ The main framing basically includes the
+                                      rigid steel frames of the building. The
+                                      PESB rigid frame comprises tapered
+                                      columns and tapered rafters. Flanges
+                                      shall be connected to webs by means
+                                      of a continuous fillet weld on one side.”</p>
+                              </div>
+                          </div>
+                          <!-- Add Arrows -->
+                          <div class="swiper-button-next" ata-aos="fade-up" data-aos-delay="200"><i
+                                  class="fa-solid fa-angle-right"></i></div>
+                          <div class="swiper-button-prev" data-aos="fade-up" data-aos-delay="200"><i
+                                  class="fa-solid fa-angle-left"></i></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
   </section>
   
 
@@ -164,6 +258,32 @@
 
   <!-- Initialize Swiper -->
   <script>
+    var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            // loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                576: {
+                    slidesPerView: 1,
+                },
+                0: {
+                    slidesPerView: 1,
+                }
+            }
+        });
     const videoElement = document.querySelector('video');
     const playPauseButton = document.querySelector('button');
     // const transBg = document.getElementsByClassName('trans-bg');

@@ -17,139 +17,90 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .contact-section {
-            /* background-image: url('image/IMG_0049.png');/ Background image URL / background-size: cover; */
-            background-image: url('Assets/images/bg-vedio.webp');
-            /* / Background image URL / background-size: cover; */
-            background-position: center;
+        .carousel-item {
             position: relative;
-            padding: 50px 0;
-            color: white;
         }
 
-        .contact-section::before {
-            content: "";
+        .carousel-item::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(88, 89, 91, 0.87);/ Light background color with opacity / z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.4%, rgba(0, 0, 0, 0.802459) 96.4%, rgba(0, 0, 0, 0.879112) 99.99%, #000000 100%);
+
+            z-index: 1;
         }
 
-        .contact-container {
+        .carousel-item img {
             position: relative;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .carousel-indicators button {
+            box-sizing: content-box !important;
+            flex: 0 1 auto !important;
+            width: 16px !important;
+            padding: 0 !important;
+            /* margin-right: 3px !important;
+          margin-left: 3px !important; */
+            height: 15px !important;
+            text-indent: -999px !important;
+            cursor: pointer !important;
+            background-color: #ef4136 !important;
+            border-radius: 50px !important;
+            border: 0 !important;
+        }
+
+        /* Specific styles for active button */
+        .carousel-indicators button.active {
+            max-height: 13px !important;
+            width: 89px !important;
+            opacity: 1 !important;
+        }
+
+        /* Specific styles for non-active buttons */
+        .carousel-indicators button:not(.active) {
+            max-height: 6px !important;
+            width: 30px !important;
+            margin: auto !important;
+        }
+
+        .carousel-item img {
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            right: auto;
+            bottom: 11REM;
+            left: 1%;
             z-index: 2;
-        }
-
-        .contact-logo {
-            text-align: center;
-        }
-
-        .contact-logo img {
-            filter: brightness(0) invert(1);/ Make logo white / max-width: 150px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info {
             display: flex;
-            align-items: center;
-        }
-
-        .contact-card {
-            background: rgba(239, 65, 54, 0.68);
-            padding: 20px;
-            border-radius: 15px;
-            margin: 10px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-card .card-body {
-            padding: 20px;
-        }
-
-        .contact-card ul {
-            padding: 0;
-        }
-
-        .contact-card ul li {
-            list-style-type: none;
-        }
-
-        @media (max-width:768px) {
-            .contact-logo {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .tesimonails-card {
-                margin-bottom: 35px;
-                margin-left: 0px;
-                max-width: 542px;
-                height: fit-content;
-                background-color: #EF4136;
-                border-radius: 30px;
-                box-shadow: 0px 4px 4px 0px #00000040;
-                margin-top: 31px;
-            }
-
-            .tesimonails-card .testi-txt {
-                padding: 17px 35px;
-            }
-
-            .tesimonails-card .testimonial-title {
-                margin: 0;
-                font-size: 21px;
-            }
-
-            .testi-container .swiper-slide {
-                width: auto;
-                margin-top: 0;
-            }
-
-            .tesimonails-card .testimonial-subtitle {
-                margin: 0;
-                font-family: Urbanist;
-                font-size: 18px;
-                font-weight: 300;
-                color: #FFFFFF;
-            }
-
-            .tesimonails-card .testi-quata i {
-                rotate: 180deg;
-                color: white;
-                font-size: 35px;
-            }
-
-            .tesimonails-card .testi-para {
-                padding: 0px 29px;
-                font-family: Poppins;
-                letter-spacing: 1px;
-                font-size: 12px;
-                font-weight: 400;
-                color: white;
-                padding-bottom: 13px;
-            }
-        }
-
-        /* .our-manufactur-cards {
-            display: none;
-        } */
-
-        .our-mobile-cards .our-mobile-card {
-            width: 115px;
-            height: 125px;
-            border-radius: 10px;
-            background: #FFFFFF91;
-            border: 1px solid #58595B1C;
-            box-shadow: 4px 0px 10px 0px #00000026;
-            box-shadow: 0px 4px 10px 0px #00000040;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            padding: 0;
+            margin-right: 16%;
+            margin-left: 3%;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 13.25rem;
+            left: 4%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #FFE;
+            right: auto;
+            text-align: left;
         }
     </style>
 </head>
@@ -157,10 +108,10 @@
 <body>
 
     <!-------------------         Navbar section       ---------------------->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid pl-3">
             <div class="navoLgo ml-4">
-                <img src="Assets/images/Logo.png" width="70px" height="70px" alt="Unique it solution img"
+                <img src="Assets/images/Logo.png" width="60px" height="50px" alt="Unique it solution img"
                     class="ml-2 footer-logo-img ">
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -196,7 +147,50 @@
         </div>
     </nav>
     <!-------------------         Slider section       ---------------------->
-    <section class="hero-banner" data-aos="zoom-in" data-aos-duration="600">
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators carousel-line text-white column-gap-2">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000" class="text-primary">
+                <img src="Assets/images/hero-bg.webp" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption d-md-block z-3">
+                    <h2 class="text-white" style="font-size: 45px;">Asthetic Impresive structure </h2>
+                    <h5 class="text-white text-left" style="font-size: 45px;">with optimal Strength.</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" class="text-primary">
+                <img src="Assets/images/hero-bg.webp" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption d-md-block z-3">
+                    <h5 class="text-white" style="font-size: 45px;">Asthetic Impresive structure </h5>
+                    <h5 class="text-white" style="font-size: 45px;">with optimal Strength.</h5>
+                </div>
+            </div>
+            <div class="carousel-item" class="text-white">
+                <img src="Assets/images/hero-bg.webp" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption d-md-block z-3">
+                    <h5 class="text-white" style="font-size: 45px;">Asthetic Impresive structure </h5>
+                    <h5 class="text-white" style="font-size: 45px;">with optimal Strength.</h5>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+
+    <!-- <section class="hero-banner" data-aos="zoom-in" data-aos-duration="600">
         <div class="swiper banner-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -251,7 +245,7 @@
                 </button>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="container-fluid " style="overflow-x: hidden;">
         <!-------------------         About section       ---------------------->
         <div class="row about-section">
@@ -307,26 +301,26 @@
                 <img src="Assets/images/what-img.png" class="img-fluid what-img" alt="">
             </div>
             <div class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 what-txt">
-                <p class="what-title" data-aos="fade-right">What is PEB ?</p>
-                <div class="what-line" data-aos="fade-right"></div>
+                <p class="what-title" data-aos="fade-up">What is PEB ?</p>
+                <div class="what-line" data-aos="fade-up"></div>
                 <ul>
-                    <li class="text-wrap" data-aos="fade-right"> The main framing basically includes the rigid steel
+                    <li class="text-wrap" data-aos="fade-up"> The main framing basically includes the rigid steel
                         frames of the building.
                         The PESB rigid frame comprises tapered columns and tapered rafters.
                         Flanges shall be connected to webs by means of a continuous fillet weld on one side</li>
 
-                    <li class="text-wrap" data-aos="fade-right">The main framing basically includes the rigid steel
+                    <li class="text-wrap" data-aos="fade-up">The main framing basically includes the rigid steel
                         frames of the building.
                         The PESB rigid frame comprises tapered columns and tapered rafters.
                         Flanges shall be connected to webs by means of a continuous fillet weld on one side</li>
 
-                    <li class="text-wrap" data-aos="fade-right">The main framing basically includes the rigid steel
+                    <li class="text-wrap" data-aos="fade-up">The main framing basically includes the rigid steel
                         frames of the building.
                         The PESB rigid frame comprises tapered columns and tapered rafters.
                         Flanges shall be connected to webs by means of a continuous fillet weld on one side</li>
                 </ul>
                 <div class="d-flex justify-content-end">
-                    <button class="what-btn" data-aos="fade-right">READ MORE</button>
+                    <button class="what-btn" data-aos="fade-up">READ MORE</button>
                 </div>
             </div>
         </div>
@@ -716,9 +710,59 @@
         </div>
         <!-------------------         latest project slider section       ---------------------->
 
-        <div class="row">
+
+
+        <div class="row ">
             <div class="col-md-12">
                 <div class="container-fluid latest-slider">
+                    <div class="row">
+                        <div class="col-md-12 testi-container position-relative">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="200"
+                                    data-aos-duration="400" style=" ">
+                                    <div class="swiper-slide latest-project">
+                                        <img src="Assets/images/latest-1.jpg" class="img-fluid latest-img" alt="">
+                                        <div class="latest-shadow "></div>
+                                        <p class="latest-title">Ganesh Industries 1</p>
+                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
+                                    </div>
+
+                                    <div class="swiper-slide latest-project">
+                                        <img src="Assets/images/latest-2.jpg" class="img-fluid latest-img" alt="">
+                                        <div class="latest-shadow "></div>
+                                        <p class="latest-title">Kalyan Industries 2</p>
+                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
+                                    </div>
+
+                                    <div class="swiper-slide latest-project">
+                                        <img src="Assets/images/latest-1.jpg" class="img-fluid latest-img" alt="">
+                                        <div class="latest-shadow "></div>
+                                        <p class="latest-title">Ganesh Industries 3</p>
+                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
+                                    </div>
+
+                                    <div class="swiper-slide latest-project">
+                                        <img src="Assets/images/latest-2.jpg" class="img-fluid latest-img" alt="">
+                                        <div class="latest-shadow "></div>
+                                        <p class="latest-title">Kalyan Industries 4</p>
+                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next" data-aos="fade-up" data-aos-delay="200"><i
+                                        class="fa-solid fa-angle-right"></i></div>
+                                <div class="swiper-button-prev" data-aos="fade-up" data-aos-delay="200"><i
+                                        class="fa-solid fa-angle-left"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <div class="container latest-slider">
                     <div class="row">
                         <div class="col-md-12 position-relative">
                             <div class="swiper-container-l">
@@ -776,7 +820,6 @@
                                         <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
                                     </div>
                                 </div>
-                                <!-- Add Arrows -->
                             </div>
 
                             <div class="swiper-button-next" ata-aos="fade-up" data-aos-delay="200"> <i
@@ -788,7 +831,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <!-------------------         OUR clients section       ---------------------->
 
@@ -823,40 +866,46 @@
                         <img src="Assets/images/client-5.jpg" class="mx-auto my-auto" alt="">
                     </div>
                 </div>
+                <div class="col">
+                    <div class="our-client1 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="Assets/images/client-2.jpg" class="mx-auto my-auto" alt="">
+                    </div>
+                </div>
             </div>
 
-        <!-------------------       Mobile   OUR clients section       ---------------------->
+            <!-------------------       Mobile   OUR clients section       ---------------------->
 
 
             <section class="footer-brands">
                 <div class="block-container">
                     <div class="swiper brands-swiper">
                         <div class="swiper-wrapper clients-slider">
-                            <div class="swiper-slide col ">
+                            <div class="swiper-slide ">
                                 <div class="our-client1 text-center" data-aos="fade-up" data-aos-delay="100">
                                     <img src="Assets/images/client-1.jpg" class="mx-auto my-auto" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide col">
+                            <div class="swiper-slide ">
                                 <div class="our-client1 text-center" data-aos="fade-up" data-aos-delay="200">
                                     <img src="Assets/images/client-2.jpg" class="mx-auto my-auto" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide col">
+                            <div class="swiper-slide ">
                                 <div class="our-client1 text-center" data-aos="fade-up" data-aos-delay="300">
                                     <img src="Assets/images/client-3.jpg" class="mx-auto my-auto" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide col">
+                            <div class="swiper-slide ">
                                 <div class="our-client1 text-center" data-aos="fade-up" data-aos-delay="400">
                                     <img src="Assets/images/client-4.jpg" class="mx-auto my-auto" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide col">
+                            <div class="swiper-slide ">
                                 <div class="our-client1 text-center" data-aos="fade-up" data-aos-delay="500">
                                     <img src="Assets/images/client-5.jpg" class="mx-auto my-auto" alt="">
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -873,12 +922,6 @@
                 </div>
             </section>
         </div>
-
-
-
-
-
-
 
         <!-------------------         Testimonials section       ---------------------->
 
@@ -969,7 +1012,7 @@
                                     </div>
                                 </div>
                                 <!-- Add Arrows -->
-                                <div class="swiper-button-next" ata-aos="fade-up" data-aos-delay="200"><i
+                                <div class="swiper-button-next" data-aos="fade-up" data-aos-delay="200"><i
                                         class="fa-solid fa-angle-right"></i></div>
                                 <div class="swiper-button-prev" data-aos="fade-up" data-aos-delay="200"><i
                                         class="fa-solid fa-angle-left"></i></div>
@@ -991,33 +1034,37 @@
             <div class="container contact-container">
                 <div class="row justify-content-center contact-info" style="font-family: urbanist;">
                     <div class="col-md-3 contact-logo">
-                        <img src="Assets/images/Logo2.png" alt="Company Logo">
+                        <img src="Assets/images/Logo2.png" data-aos="fade-up" alt="Company Logo">
                     </div>
                     <div class="col-md-9">
                         <div class="card contact-card">
                             <div class="card-body">
                                 <div class="row" style="color: white;">
                                     <div class="col-md-6">
-                                        <h5 class="footer-add-title">Address 1:</h5>
-                                        <p class="footer-add-txt">A 402, Satva Hi-Life, Opp. Madhuvan Bungalow, Nr.
+                                        <h5 class="footer-add-title" data-aos="fade-up">Address 1:</h5>
+                                        <p class="footer-add-txt" data-aos="fade-up">A 402, Satva Hi-Life, Opp. Madhuvan
+                                            Bungalow, Nr.
                                             Ratnam Status, Sola, Ahmedabad-380060 (Gujarat)</p>
-                                        <h5 class="footer-add-title">Product:</h5>
+                                        <h5 class="footer-add-title" data-aos="fade-up">Product:</h5>
                                         <ul>
-                                            <li class="footer-pro-txt">Building with Mezzanines</li>
-                                            <li class="footer-pro-txt">Multi-storeyed buildings</li>
-                                            <li class="footer-pro-txt">Sandwich PU/PIR Panels</li>
-                                            <li class="footer-pro-txt">Rockwool Fireproof Panels</li>
+                                            <li class="footer-pro-txt" data-aos="fade-up">Building with Mezzanines</li>
+                                            <li class="footer-pro-txt" data-aos="fade-up">Multi-storeyed buildings</li>
+                                            <li class="footer-pro-txt" data-aos="fade-up">Sandwich PU/PIR Panels</li>
+                                            <li class="footer-pro-txt" data-aos="fade-up">Rockwool Fireproof Panels</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <h5 class="footer-add-title">Address 2:</h5>
-                                        <p class="footer-add-txt">A 402, Satva Hi-Life, Opp. Madhuvan Bungalow, Nr.
+                                        <h5 class="footer-add-title" data-aos="fade-up">Address 2:</h5>
+                                        <p class="footer-add-txt" data-aos="fade-up">A 402, Satva Hi-Life, Opp. Madhuvan
+                                            Bungalow, Nr.
                                             Ratnam Status, Sola,
                                             Ahmedabad-380060 (Gujarat)</p>
-                                        <h5 class="footer-email-title">Email ID:</h5>
-                                        <a class="footer-email-txt" href="mailto:info@izonpeb.com">info@izonpeb.com</a>
-                                        <h5 class="footer-contact-title">Contact:</h5>
-                                        <a class="footer-contact-txt" href="tel:+919725768646">+91 97257 68646</a>
+                                        <h5 class="footer-email-title" data-aos="fade-up">Email ID:</h5>
+                                        <a class="footer-email-txt" href="mailto:info@izonpeb.com"
+                                            data-aos="fade-up">info@izonpeb.com</a>
+                                        <h5 class="footer-contact-title" data-aos="fade-up">Contact:</h5>
+                                        <a class="footer-contact-txt" href="tel:+919725768646" data-aos="fade-up"
+                                            data-aos-delay="300">+91 97257 68646</a>
                                     </div>
                                 </div>
                             </div>
@@ -1104,16 +1151,16 @@
             }
         });
         var swiper = new Swiper('.swiper-container-l', {
-            slidesPerView: 1,
-            spaceBetween: 50,
-            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            // loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
                 1200: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                 },
                 992: {
                     slidesPerView: 2,
@@ -1166,7 +1213,7 @@
                     }, 992: {
                         slidesPerView: 3,
                     }, 768: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                     }, 576: {
                         slidesPerView: 1,
                     }, 0: {
