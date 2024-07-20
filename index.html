@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Home - IZON PEB LLP</title>
-    <link rel="stylesheet" href="Assets/Style.css">
+    <link rel="stylesheet" href="Assets/css/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,98 +17,15 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .carousel-item {
-            position: relative;
-        }
 
-        .carousel-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.4%, rgba(0, 0, 0, 0.802459) 96.4%, rgba(0, 0, 0, 0.879112) 99.99%, #000000 100%);
-
-            z-index: 1;
-        }
-
-        .carousel-item img {
-            position: relative;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-
-        .carousel-indicators button {
-            box-sizing: content-box !important;
-            flex: 0 1 auto !important;
-            width: 16px !important;
-            padding: 0 !important;
-            /* margin-right: 3px !important;
-          margin-left: 3px !important; */
-            height: 15px !important;
-            text-indent: -999px !important;
-            cursor: pointer !important;
-            background-color: #ef4136 !important;
-            border-radius: 50px !important;
-            border: 0 !important;
-        }
-
-        /* Specific styles for active button */
-        .carousel-indicators button.active {
-            max-height: 13px !important;
-            width: 89px !important;
-            opacity: 1 !important;
-        }
-
-        /* Specific styles for non-active buttons */
-        .carousel-indicators button:not(.active) {
-            max-height: 6px !important;
-            width: 30px !important;
-            margin: auto !important;
-        }
-
-        .carousel-item img {
-            position: relative;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .carousel-indicators {
-            position: absolute;
-            right: auto;
-            bottom: 11REM;
-            left: 1%;
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin-right: 16%;
-            margin-left: 3%;
-        }
-
-        .carousel-caption {
-            position: absolute;
-            bottom: 13.25rem;
-            left: 4%;
-            padding-top: 1.25rem;
-            padding-bottom: 1.25rem;
-            color: #FFE;
-            right: auto;
-            text-align: left;
-        }
+        
     </style>
 </head>
 
 <body>
 
     <!-------------------         Navbar section       ---------------------->
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid pl-3">
             <div class="navoLgo ml-4">
                 <img src="Assets/images/Logo.png" width="60px" height="50px" alt="Unique it solution img"
@@ -148,7 +65,7 @@
     </nav>
     <!-------------------         Slider section       ---------------------->
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide hero-slider">
         <div class="carousel-indicators carousel-line text-white column-gap-2">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -158,94 +75,30 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000" class="text-primary">
+            <div class="carousel-item active" data-bs-interval="1000" class="text-primary">
                 <img src="Assets/images/hero-bg.webp" class="d-block w-100" style="height: 100vh;" alt="...">
                 <div class="carousel-caption d-md-block z-3">
-                    <h2 class="text-white" style="font-size: 45px;">Asthetic Impresive structure </h2>
-                    <h5 class="text-white text-left" style="font-size: 45px;">with optimal Strength.</h5>
+                    <h2 class="text-white slider-txt" data-aos="fade-up" data-aos-duration="600">Asthetic Impresive structure </h2>
+                    <h5 class="text-white slider-txt" data-aos="fade-up" data-aos-duration="600">with optimal Strength.</h5>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000" class="text-primary">
+            <div class="carousel-item" data-bs-interval="200" class="text-primary">
                 <img src="Assets/images/hero-bg.webp" class="d-block w-100" style="height: 100vh;" alt="...">
                 <div class="carousel-caption d-md-block z-3">
-                    <h5 class="text-white" style="font-size: 45px;">Asthetic Impresive structure </h5>
-                    <h5 class="text-white" style="font-size: 45px;">with optimal Strength.</h5>
+                    <h5 class="text-white slider-txt" data-aos="fade-up">Asthetic Impresive structure </h5>
+                    <h5 class="text-white slider-txt" data-aos="fade-up">with optimal Strength.</h5>
                 </div>
             </div>
             <div class="carousel-item" class="text-white">
                 <img src="Assets/images/hero-bg.webp" class="d-block w-100" style="height: 100vh;" alt="...">
                 <div class="carousel-caption d-md-block z-3">
-                    <h5 class="text-white" style="font-size: 45px;">Asthetic Impresive structure </h5>
-                    <h5 class="text-white" style="font-size: 45px;">with optimal Strength.</h5>
+                    <h5 class="text-white slider-txt" data-aos="fade-up">Asthetic Impresive structure </h5>
+                    <h5 class="text-white slider-txt" data-aos="fade-up">with optimal Strength.</h5>
                 </div>
             </div>
         </div>
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button> -->
     </div>
 
-    <!-- <section class="hero-banner" data-aos="zoom-in" data-aos-duration="600">
-        <div class="swiper banner-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="primary-container banner-inner">
-                        <div class="banner">
-                            <div class="img-wrapper">
-                                <div class="banner-img" style="background-image: url('Assets/images/hero-bg.webp');">
-                                </div>
-                            </div>
-                            <div class="upper-layer-flat"></div>
-                            <div class="upper-layer-linear"></div>
-                            <h2>Transforming Spaces, Inspiring Lives</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="primary-container banner-inner">
-                        <div class="banner">
-                            <div class="img-wrapper">
-                                <div class="banner-img" style="background-image: url('Assets/images/hero-bg.webp');">
-                                </div>
-                            </div>
-                            <div class="upper-layer-flat"></div>
-                            <div class="upper-layer-linear"></div>
-                            <h2 style="max-width: 740px;">Elevate Your Interior with Our Exquisite Laminates</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="primary-container banner-inner">
-                        <div class="banner">
-                            <div class="img-wrapper">
-                                <div class="banner-img" style="background-image: url('Assets/images/hero-bg.webp');">
-                                </div>
-                            </div>
-                            <div class="upper-layer-flat"></div>
-                            <div class="upper-layer-linear"></div>
-                            <h2 style="max-width: 1060px;">Unrivaled Quality, Timeless Elegance – Redefine Your
-                                Style Today!</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="primary-container btn-outer">
-            <div class="btn-wrapper">
-                <button type="button" class="next-btn">
-                    <img src="Assets/images/arrow-right-dark.svg" alt="Arrow right" />
-                </button>
-                <button type="button" class="prev-btn">
-                    <img src="Assets/images/arrow-left-dark.svg" alt="Arrow left" />
-                </button>
-            </div>
-        </div>
-    </section> -->
     <section class="container-fluid " style="overflow-x: hidden;">
         <!-------------------         About section       ---------------------->
         <div class="row about-section">
@@ -760,78 +613,7 @@
             </div>
         </div>
 
-        <!-- <div class="row">
-            <div class="col-md-12">
-                <div class="container latest-slider">
-                    <div class="row">
-                        <div class="col-md-12 position-relative">
-                            <div class="swiper-container-l">
-                                <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="200"
-                                    data-aos-duration="400">
-                                    <div class="swiper-slide latest-project">
-                                        <img src="Assets/images/latest-1.jpg" class="img-fluid latest-img" alt="">
-                                        <div class="latest-shadow "></div>
-                                        <p class="latest-title">Ganesh Industries 1</p>
-                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
-                                    </div>
-
-                                    <div class="swiper-slide latest-project">
-                                        <img src="Assets/images/latest-2.jpg" class="img-fluid latest-img" alt="">
-                                        <div class="latest-shadow "></div>
-                                        <p class="latest-title">Kalyan Industries 2</p>
-                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
-                                    </div>
-
-                                    <div class="swiper-slide latest-project">
-                                        <img src="Assets/images/latest-1.jpg" class="img-fluid latest-img" alt="">
-                                        <div class="latest-shadow "></div>
-                                        <p class="latest-title">Ganesh Industries 3</p>
-                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
-                                    </div>
-
-                                    <div class="swiper-slide latest-project">
-                                        <img src="Assets/images/latest-2.jpg" class="img-fluid latest-img" alt="">
-                                        <div class="latest-shadow "></div>
-                                        <p class="latest-title">Kalyan Industries 4</p>
-                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
-                                    </div>
-                                    <div class="swiper-slide latest-project">
-                                        <img src="Assets/images/latest-1.jpg" class="img-fluid latest-img" alt="">
-                                        <div class="latest-shadow "></div>
-                                        <p class="latest-title">Ganesh Industries 5</p>
-                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
-                                    </div>
-                                    <div class="swiper-slide latest-project">
-                                        <img src="Assets/images/latest-2.jpg" class="img-fluid latest-img" alt="">
-                                        <div class="latest-shadow "></div>
-                                        <p class="latest-title">Kalyan Industries 6</p>
-                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
-                                    </div>
-                                    <div class="swiper-slide latest-project">
-                                        <img src="Assets/images/latest-1.jpg" class="img-fluid latest-img" alt="">
-                                        <div class="latest-shadow "></div>
-                                        <p class="latest-title">Ganesh Industries 7</p>
-                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
-                                    </div>
-                                    <div class="swiper-slide latest-project">
-                                        <img src="Assets/images/latest-2.jpg" class="img-fluid latest-img" alt="">
-                                        <div class="latest-shadow "></div>
-                                        <p class="latest-title">Kalyan Industries 8</p>
-                                        <i class="fa-solid fa-angle-right right-icon" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-button-next" ata-aos="fade-up" data-aos-delay="200"> <i
-                                    class="fa-solid fa-angle-right"></i></div>
-                            <div class="swiper-button-prev" data-aos="fade-up" data-aos-delay="200"><i
-                                    class="fa-solid fa-angle-left"></i></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div> -->
+        
 
         <!-------------------         OUR clients section       ---------------------->
 
@@ -1025,8 +807,6 @@
 
     </section>
 
-
-
     <!-------------------         footer section       ---------------------->
 
     <footer>
@@ -1075,49 +855,7 @@
         </div>
     </footer>
 
-    <footer class="footer" style="display: none;">
-        <div class="footer-bg" data-aos="fade-up">
-            <div class="bg-img"></div>
-            <div class="footer-bg-color"></div>
-            <img src="Assets/images/bg-vedio.webp" alt="">
-        </div>
-        <div>
-            <!-- <div class="footer-logo"> -->
-            <img src="Assets/images/Logo2.png" data-aos="fade-up-right" data-aos-delay="200" width="150px"
-                height="150px" alt="">
-            <!-- </div> -->
-            <div class="d-flex justify-content-between footer-txt" data-aos="fade-up" data-aos-delay="100">
-                <div class="footer-txt-1" data-aos="fade-up" data-aos-delay="400">
-                    <p class="footer-add-title">Address 1:</p>
-                    <p class="footer-add-txt">A 402 , Satva Hi-Life, Opp.Madhuvan <br> Bunglow, Ntr, Ratnam Status,
-                        Sola,
-                        Ahmedabad-380060 (Gujarat) </p>
-                    <div class="footer-project-txt">
-                        <p class="footer-add-title">Project :</p>
-                        <p class="footer-pro-txt">Building with Mezzanines</p>
-                        <p class="footer-pro-txt">Multi storeyed buildings</p>
-                        <p class="footer-pro-txt">Sandwich PU/PIR Panels</p>
-                        <p class="footer-pro-txt">Rockwool Fireproof Panels</p>
-                    </div>
-                </div>
-                <div class="footer-txt-2" data-aos="fade-up" data-aos-delay="400">
-
-                    <p class="footer-add-title">Address 1:</p>
-                    <p class="footer-add-txt">A 402 , Satva Hi-Life, Opp.Madhuvan <br> Bunglow, Ntr, Ratnam Status,
-                        Sola,
-                        Ahmedabad-380060 (Gujarat) </p>
-
-                    <p class="footer-email-title">Email id : </p>
-                    <a class="footer-email-txt" href="mailto:info@izonpeb.com">info@izonpeb.com</a>
-
-                    <p class="footer-contact-title">Contact :</p>
-                    <a class="footer-contact-txt" href="tel:+919725768646">+91 97257 68646</a>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-    <script src="aos.js"></script>
+    <script src="Assets/js/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
