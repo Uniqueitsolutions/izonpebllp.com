@@ -1370,7 +1370,7 @@
 .btn-wrapper {
     display: flex;
     justify-content: center;
-    column-gap: 25px;
+    column-gap: 10px;
     margin-top: 33px;
 }
 
