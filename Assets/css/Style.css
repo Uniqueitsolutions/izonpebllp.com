@@ -380,6 +380,10 @@
         display: none;
     }
 
+    .mobile-about-section {
+        display: block;
+    }
+
 
 }
 
@@ -468,7 +472,7 @@
 
 }
 
-@media (max-width: 656px) and (min-width: 536px) {
+@media screen and (max-width: 656px) and (min-width: 536px) {
     .mobile-abour-imgs .mobile-img1 {
         width: 328px;
         position: absolute;
@@ -495,8 +499,76 @@
         z-index: 0;
     }
 }
+@media screen and (max-width:410px) and (min-width:320px){
+    .mobile-about-section .about-para{
+        margin-top: -180px !important;
+    }
+}
+@media screen and (max-width:498px) and (min-width:4100px){
+    .mobile-about-section .about-para{
+        margin-top: -143px !important;
+    }
+}
 
-@media (min-width:360px) and (max-width:410px) {
+@media screen and (max-width:499px) and (min-width:358px){
+    .mobile-abour-imgs .mobile-img1 {
+        width: 216px;
+        position: absolute;
+        left: 45%;
+        height: 318px;
+        z-index: 0;
+    }
+
+    .mobile-abour-imgs .mobile-img2 {
+        width: 171px;
+        height: 210px;
+        z-index: 10;
+        position: absolute;
+        right: 40%;
+        top: 6%;
+    }
+
+    .mobile-abour-imgs .mobile-img3 {
+        position: absolute;
+        top: 37%;
+        right: 31%;
+        width: 252px;
+        height: 179px;
+        z-index: 0;
+    }
+}
+@media screen and (max-width:359px) and (min-width:320px) {
+    .mobile-abour-imgs .mobile-img1 {
+        width: 185px;
+        position: absolute;
+        left: 40%;
+        height: 290px;
+        z-index: 0;
+    }
+
+    .mobile-abour-imgs .mobile-img2 {
+        width: 153px;
+        height: 177px;
+        z-index: 10;
+        position: absolute;
+        right: 40%;
+        top: 6%;
+    }
+
+    .mobile-abour-imgs .mobile-img3 {
+        position: absolute;
+        top: 32%;
+        right: 31%;
+        width: 214px;
+        height: 162px;
+        z-index: 0;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:410px) {
+    .mobile-about-section .about-para{
+        margin-top: -180px;
+    }
     .mobile-abour-imgs .mobile-img1 {
         width: 195px;
         position: absolute;
@@ -525,7 +597,7 @@
     }
 
     .mobile-about-section .about-para {
-        margin-top: -170px;
+        margin-top: -170px !important;
         font-family: Poppins;
         width: auto;
         padding-top: 28px;
@@ -538,7 +610,7 @@
 }
 
 .mobile-about-section .about-para {
-    /* margin-top: 10px; */
+    margin-top: 33px;
     font-family: Poppins;
     width: auto;
     padding-top: 28px;
@@ -2064,10 +2136,10 @@
                               Manufature start
 
     --------------------------------------------------------------------------*/
-    
-    .manufacture-facilities-items {
-        margin-bottom: 50px;
-    }
+
+.manufacture-facilities-items {
+    margin-bottom: 50px;
+}
 
 
 .manufacture-items {
@@ -2107,8 +2179,8 @@ li::marker {
 .ups-section {
     /* Width: 100%;
         Height: 468px; */
-        margin-bottom: 50px;
-        background: var(--txt-lightgrey);
+    margin-bottom: 50px;
+    background: var(--txt-lightgrey);
 }
 
 .ups-items {
@@ -2210,7 +2282,8 @@ li::marker {
     .ups-para-right {
         font-size: 15px;
     }
-    .ups-item-left{
+
+    .ups-item-left {
         margin-left: 70px;
     }
 
@@ -2305,13 +2378,15 @@ li::marker {
     margin-bottom: 30px;
 }
 
-.approved-section{
+.approved-section {
     margin-bottom: 50px;
 }
+
 @media screen and (max-width: 376px) {
     .approv-title {
         font-size: 25px;
     }
+
     .approve-right {
         width: 100%;
         margin-left: 0%;
@@ -2341,7 +2416,7 @@ li::marker {
     }
 }
 
-@media screen and (min-width:376px) and  (max-width: 430px)  {
+@media screen and (min-width:376px) and (max-width: 430px) {
     .approv-title {
         font-size: 30px;
     }
@@ -2357,6 +2432,7 @@ li::marker {
         margin-left: 23%;
         margin-bottom: 30px;
     }
+
     .approv-bg-img {
         Width: 81px;
         Height: 72px;
