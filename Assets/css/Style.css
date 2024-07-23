@@ -1624,7 +1624,7 @@
 }
 
 .contact-card {
-    background: rgba(239, 65, 54, 0.68);
+    background: rgba(239, 65, 54, 0.68) !important;
     padding: 20px;
     border-radius: 15px;
     margin: 10px 0;
@@ -1819,7 +1819,7 @@
     /* line-height: 15px; */
     text-align: left;
     color: var(--txt-lightred);
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -2313,13 +2313,13 @@ li::marker {
         font-size: 25px;
     }
     .approve-right {
-        width: 90%;
+        width: 100%;
         margin-left: 0%;
         margin-bottom: 30px;
     }
 
     .approve {
-        width: 90%;
+        width: 100%;
         margin-left: 0%;
         margin-bottom: 30px;
     }
@@ -2341,23 +2341,22 @@ li::marker {
     }
 }
 
-@media (max-width: 430px) and (min-width:376px) {
+@media screen and (min-width:376px) and  (max-width: 430px)  {
     .approv-title {
         font-size: 30px;
     }
 
     .approve {
-        width: 60%;
+        width: 88%;
         margin-left: 0%;
         margin-bottom: 30px;
     }
 
     .approve-right {
-        width: 60%;
-        margin-left: 0%;
+        width: 76%;
+        margin-left: 23%;
         margin-bottom: 30px;
     }
-
     .approv-bg-img {
         Width: 81px;
         Height: 72px;
