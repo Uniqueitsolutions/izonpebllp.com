@@ -1125,13 +1125,25 @@
 .latest-project {
     position: relative;
 }
-
+.latest-project::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.4%, rgba(0, 0, 0, 0.802459) 96.4%, rgba(0, 0, 0, 0.879112) 99.99%, #000000 100%);
+    z-index: 1;
+    border-radius: 5px;
+}
 .latest-project .right-icon {
     color: #ffffff;
     position: absolute;
     right: 38px;
     font-size: 22px;
     bottom: 21px;
+    z-index: 1;
+
 }
 
 .latest-img {
@@ -1142,6 +1154,7 @@
 }
 
 .latest-shadow {
+    display: none;
     width: 100%;
     height: 164px;
     position: absolute;
@@ -1159,6 +1172,7 @@
     font-weight: 600;
     color: #FFFFFF;
     left: 28px;
+    z-index: 1;
 }
 
 .swiper-button-next {
@@ -1230,7 +1244,15 @@
         z-index: 10;
     }
 }
-
+@media screen and (max-width: 875px){
+    .latest-project{
+        width: auto !important;
+        margin-right: 100px;
+    }
+    .latest-img{
+        height: auto;
+    }
+}
 .swiper-container {
     overflow: hidden;
 }
@@ -1349,6 +1371,7 @@
     display: flex;
     justify-content: center;
     column-gap: 25px;
+    margin-top: 33px;
 }
 
 .btn-wrapper>button {
