@@ -196,6 +196,21 @@
 .slider-txt {
     font-size: 43px;
 }
+@media screen and (max-width: 770px) and (min-width:450px) {
+    .slider-txt{
+        font-size: 37px;
+    }
+    .carousel-indicators {
+        bottom: 6REM;
+    }
+    
+    .carousel-caption {
+        position: absolute;
+        bottom: 8.25rem;
+        left: 4%;
+    }
+    
+}
 
 @media (max-width:426px) {
 
@@ -401,7 +416,16 @@
     text-align: left;
     color: var(--txt-lightred);
 }
-
+@media screen and (max-width:850px) {
+    .mobile-about-section .about-text{
+        font-size: 43px;
+    }
+    .mobile-about-section .about-line{
+        margin-top: 10px;
+        width: 162px;
+    }
+    
+}
 .mobile-about-section .about-line {
     border: 3px solid var(--txt-lightred);
     border-radius: 3px;
@@ -629,7 +653,15 @@
     display: flex;
     justify-content: end;
 }
-
+@media screen and (max-width: 850px ) {
+    .about-mobil-btn{
+        width: 90%;
+    }
+    .mobile-about-section .about-para{
+        width: 90%;
+    }
+    
+}
 .mobile-about-section .about-btn {
     font-family: Urbanist;
     background: var(--txt-lightred);
@@ -746,9 +778,9 @@
 }
 
 @media (max-width: 1253px) {
-    .what-imgs {
-        height: 380px;
-    }
+        /* .what-imgs {
+            height: 380px;
+        } */
 
     .what-section .what-img {
         height: 100%;
@@ -784,6 +816,10 @@
 }
 
 @media (max-width: 1165px) and (min-width: 769px) {
+    .what-imgs{
+        height: 500px;
+        object-fit: contain;
+    }
     .what-section .what-img {
         height: 100%;
         padding-bottom: 0;
@@ -887,24 +923,29 @@
     }
 }
 
-@media screen and (max-width: 872px) and (min-width: 762px) {
-    .our-cards .our-card {
-        width: 137px;
-        height: 145px;
-    }
-}
+
 
 .mobile-manufacture-cards {
     display: none;
 }
 
-@media screen and (max-width: 762px) and (min-width: 692px) {
+@media screen and (max-width: 800px) and (min-width: 692px) {
     .our-cards .our-card {
-        width: 120px;
-        height: 14px;
+        width: 123px !important;
+        height: 150px !important;
     }
 }
 
+@media screen and (max-width: 872px) and (min-width: 800px) {
+    .our-cards .our-card {
+        width: 137px;
+        height: 145px;
+    }
+    .our-manufactur-cards table{
+        margin-left: 30px !important;
+        padding: 0;
+    }
+}
 @media screen and (max-width:692px) {
 
     .our-manufactur-cards {
@@ -1032,6 +1073,15 @@
     /* responsive ma width ne kadhi nakhvanai 6e etle set thai jase component */
     text-align: left;
     margin-top: 30px;
+}
+@media screen and (max-width:860px) {
+    .bulding-section .bulding-txt .bulding-para1 {
+        width: auto;
+    }
+
+    .bulding-section .bulding-txt .bulding-para2 {
+        width: auto;
+    }
 }
 
 .bulding-section .bulding-txt .bulding-btn {
@@ -1246,7 +1296,7 @@
 }
 @media screen and (max-width: 875px){
     .latest-project{
-        width: auto !important;
+        width: fit-content !important;
         margin-right: 100px;
     }
     .latest-img{
@@ -1411,7 +1461,7 @@
     display: none;
 }
 
-@media screen and (max-width:1143px) {
+@media screen and (max-width:1368px) {
     .client-logo {
         display: none;
     }
@@ -1521,7 +1571,7 @@
     }
 
     .testi-container .swiper-slide {
-        width: auto;
+        width: auto ;
         margin-top: 0;
     }
 
@@ -1867,6 +1917,9 @@
     .about-izon .about-izon-img {
         margin-left: 0;
     }
+    .about-izon .about-izon-txt{
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 426px) {
@@ -2112,9 +2165,9 @@
 }
 
 @media (max-width: 1253px) {
-    .what-imgs {
-        height: 380px;
-    }
+    /* .what-imgs {
+        height: 500px;
+    } */
 
     .what-section .what-img {
         height: 100%;
@@ -2169,6 +2222,12 @@
         padding: 30px 12px !important; 
     }
 
+}
+@media screen and (max-width:770px) and (min-width:426px) {
+    .what-imgs{
+        height: 500px;
+    }
+    
 }
 
 

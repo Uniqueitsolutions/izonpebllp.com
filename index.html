@@ -15,8 +15,19 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-
-
+        .drop-menu-list{
+            margin-top: 9px !important;
+    margin-left: -33px;
+    width: max-content;
+        }
+        .highlighted {
+            padding: 2px 12px;
+            border-radius: 30px;
+            background-color: var(--txt-lightred);
+        }
+        .nav-drop-item {
+            padding-bottom: 6px;
+        }
     </style>
 </head>
 
@@ -42,9 +53,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.html" id="about-us">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="structural.html" id="peb">PEB</a>
-                    </li>
+                    <li class="nav-items dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          PEB
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link" href="structural.html">structural</a></li>
+                          <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link" href="#">Another action</a></li>
+                          <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link" href="#">Another action</a></li>
+                          <li class="nav-item"><hr class="dropdown-divider"></li>
+                          <li class="nav-item"><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    <!-- <li class=" dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PEB
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link " href="structural.html">Structural</a>
+                            </li>
+                            <li class="nav-item nav-drop-item"><a class="nav-link -item" href="#">Another action</a></li>
+                            <li class="nav-item nav-drop-item"><a class="nav-link -item" href="#">Another action</a></li>
+                            <li class="nav-item nav-drop-item"><a class="nav-link -item" href="#">Another action</a></li>
+                        </ul>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="products">Products</a>
                     </li>
@@ -99,7 +132,7 @@
         </div>
     </div>
 
-    <section class="container-fluid " style="overflow-x: hidden;">
+    <section class="container-fluid " style="overflow: hidden;">
         <!-------------------         About section       ---------------------->
         <div class="row about-section">
             <div class="col-12 col-md-6">
@@ -137,7 +170,8 @@
                 </div>
             </div>
             <div class="row">
-                <p class="about-para" data-aos="fade-up">PEB LLP, is one of the emerging companies of India where
+                <p class="about-para mx-auto" data-aos="fade-up">PEB LLP, is one of the emerging companies of India
+                    where
                     Pre-Engineering Steel Structures are concerned. PEB LLP, has come into existence to satisfy
                     customer’s need with the best quality of work in the minimum time span. People and technology both
                     are the main supporting pillars to witness the growth of the company with the guidance of the
@@ -890,7 +924,7 @@
         // });
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 20,
             loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -913,6 +947,19 @@
                     slidesPerView: 1,
                 }
             }
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".dropdown-item-link").forEach(function(link) {
+                link.addEventListener("click", function(event) {
+                    // Remove the class from all dropdown items
+                    document.querySelectorAll(".dropdown-item-link").forEach(function(item) {
+                        item.classList.remove("highlighted");
+                    });
+                    // Add the class to the clicked item
+                    this.classList.add("highlighted");
+                    // event.preventDefault(); // Prevent the default link behavior if necessary
+                });
+            });
         });
         document.addEventListener('DOMContentLoaded', (event) => {
             const navLinks = document.querySelectorAll('.nav-link');
@@ -959,7 +1006,7 @@
                     }
                 }
             })
-            
+
             document.querySelector(".footer-brands .btn-wrapper .next-btn").addEventListener('click', function () {
                 brandSwiper.slideNext(500);
             });
@@ -974,33 +1021,33 @@
             //     brandSwiper.slidePrev(300);
 
 
-                // const brandSwiper = new Swiper('.brands-swiper', {
-                //     loop: true,
-                //     spaceBetween: 0,
-                //     breakpoints: {
-                //         1200: {
-                //             slidesPerView: 5,
-                //         },
-                //         992: {
-                //             slidesPerView: 4,
-                //         },
-                //         768: {
-                //             slidesPerView: 3,
-                //         },
-                //         576: {
-                //             slidesPerView: 2,
-                //         },
-                //         0: {
-                //             slidesPerView: 1,
-                //         }
-                //     }
-                // });
+            // const brandSwiper = new Swiper('.brands-swiper', {
+            //     loop: true,
+            //     spaceBetween: 0,
+            //     breakpoints: {
+            //         1200: {
+            //             slidesPerView: 5,
+            //         },
+            //         992: {
+            //             slidesPerView: 4,
+            //         },
+            //         768: {
+            //             slidesPerView: 3,
+            //         },
+            //         576: {
+            //             slidesPerView: 2,
+            //         },
+            //         0: {
+            //             slidesPerView: 1,
+            //         }
+            //     }
+            // });
 
 
-            });
-            AOS.init({
-                once: true
-            });
+        });
+        AOS.init({
+            once: true
+        });
     </script>
 
 </body>
