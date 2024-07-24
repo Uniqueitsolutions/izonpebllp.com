@@ -33,6 +33,164 @@
             Width: 200px;
             border: 2px solid #EF4136
         }
+
+        .roof-wall-bg {
+            object-fit: cover;
+            width: 95%;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 0px 7px 10px 0px #00000040;
+            box-shadow: 7px 0px 10px 0px #00000040;
+
+            background-image: url(Assets/images/roof-wall.webp);
+            object-fit: cover;
+            background-size: cover;
+
+        }
+
+        .roof-wall-details {
+            object-fit: cover;
+            width: 95%;
+            margin: auto;
+            border-radius: 5px
+        }
+
+        .roof-ronded-bg {
+            Width: 217px;
+            Height: 220px;
+            border-radius: 100%;
+            border: 10px solid #FFFFFF;
+            box-shadow: 0px 4px 4px 0px #00000040;
+        }
+
+        .roof-round {
+            margin-top: -8%;
+            margin-right: 2%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .roof-round {
+                margin-top: -7%;
+            }
+
+            .roof-ronded-bg {
+                width: 168px;
+                height: 167px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .roof-round {
+                margin-top: -11%;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            .roof-ronded-bg {
+                width: 112px;
+                height: 109px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .roof-round {
+                margin-top: -14%;
+            }
+        }
+
+        .roof-paint {
+            width: 95%;
+            margin: auto;
+        }
+
+        .roof-paint-title {
+            font-family: Poppins;
+            font-size: 23px;
+            font-weight: 500;
+            text-align: left;
+            margin-top: -4%;
+        }
+
+        .roof-paint-para {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+            padding-top: 1%;
+            width: 88%;
+        }
+
+        @media screen and (max-width: 850px) {
+            .roof-paint {
+                margin-top: -8%;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .roof-paint {
+                margin-top: -16%;
+            }
+
+            .roof-paint-para {
+                font-size: 15px;
+                padding-top: 4%;
+            }
+
+            .roof-paint-title {
+                font-size: 21px;
+                margin-top: -4%;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .roof-paint-para {
+                font-size: 14px;
+                padding-top: 1%;
+            }
+
+            .roof-paint-title {
+                font-size: 17px;
+                margin-top: -1%;
+            }
+
+            .roof-paint {
+                margin-top: -13%;
+            }
+        }
+
+        .claading-main {
+            width: 95%;
+        }
+
+        .clading-img {
+            width: 100%;
+            height: 349px;
+            border-radius: 5px;
+            box-shadow: 0px 7px 10px 0px #00000040;
+            box-shadow: 7px 0px 10px 0px #00000040;
+        }
+
+        .claading-title {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: left;
+
+        }
+
+        .claading-para {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .claading-txt {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 
@@ -188,13 +346,136 @@
             </div>
         </div>
 
-        <!-- roff wall  -->
+        <!-- roff wall title -->
         <div class="roof-wall mx-auto">
             <h2 class="roof-title">ROOF WALL</h2>
             <p class="roof-line mt-3"></p>
         </div>
+        <!-- roof wall details -->
+        <div class="roof-wall-details mt-5">
+            <div class="text-center">
+                <img src="Assets/images/roof-wall.webp" class="roof-wall-bg img-fluid" alt="">
+            </div>
+            <div class="text-end roof-round">
+                <img src="Assets/images/roof-wall-rounded.webp" class="roof-ronded-bg" alt="">
+            </div>
+            <div class="roof-paint">
+                <p class="roof-paint-title">Paints and Finishes</p>
+                <p class="roof-paint-para">All the primary and secondary steels are coated with red oxide. for special
+                    cases of paints, the
+                    structure passed through a shot-blast booth for better anti-corrosion.</p>
+            </div>
+
+            <div>
+            </div>
+        </div>
+
+        <div class="row claading-main justify-content-center">
+            <div class="col-lg-5 col-md-6 text-center">
+                <img src="Assets/images/puf.webp" class="img-fluid clading-img" alt="">
+            </div>
+            <div class="col-lg-6 col-md-5 claading-txt">
+                <div class="claading">
+                    <p class="claading-title">Claddings</p>
+                    <p class="claading-para">Our sheeting is a multi-layer coated profile to ensure a longer life under
+                        different weather conditions and enhanced aesthetics. Claddings can be used for roofs and walls.
+                        to ensure a longer life under.
+                    </p>
+                </div>
+                <div class="claading">
+                    <p class="claading-title">Doors and Windows</p>
+                    <p class="claading-para">MS or Aluminium framed doors and windows are fixed to the purlins or the
+                        supporting profiled steel either by welding or bolted to the flanges already fixed to the
+                        purlins. bolted to the flanges already fixed to the
+                        purlins.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row claading-main justify-content-center">
+            <div class="col-lg-6 col-md-5 claading-txt">
+                <div class="claading">
+                    <p class="claading-title">Sheeting</p>
+                    <p class="claading-para">Ribbed steel is used as roof and wall sheeting. The sheets are generally
+                        produced from steel coils having thickness 0.47 mm to 0.8 mm high tensile steel. We should be a
+                        focus on roofing panels that should sustain snow loads as well as cyclonic winds. The panel
+                        conforms to ASTM A792M Grade 340/550 MPA and is coated with a protective layer of Galvalume,
+                        which is a 42.5% zinc and 55 % aluminium alloy coating (150 GSM). Panels are available in 4
+                        nominal thicknesses: 0.475 mm, 0.50 mm, 0.55 mm, 0.76 mm and in all standard colours.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 text-center">
+                <img src="Assets/images/sheeting.webp" class="img-fluid clading-img" alt="">
+            </div>
+        </div>
+        <div class="row claading-main justify-content-center mb-5">
+            <div class="col-lg-5 col-md-6 text-center">
+                <img src="Assets/images/puf.webp" class="img-fluid clading-img" alt="">
+            </div>
+            <div class="col-lg-6 col-md-5 claading-txt">
+                <div class="claading">
+                    <p class="claading-title">PUF Panels</p>
+                    <p class="claading-para">The main use of puf panels is to cover main steel frame. Sandwich panels
+                        comprise an exterior metal skin, a Polyurethane core and an interior flat skin made of metal.
+                        comprise an exterior metal skin, a Polyurethane core and an interior flat skin made of metal.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
     </section>
 
+
+       <!-------------------         footer section       ---------------------->
+
+       <footer>
+        <div class="contact-section">
+            <div class="container contact-container">
+                <div class="row justify-content-center contact-info" style="font-family: urbanist;">
+                    <div class="col-md-3 contact-logo">
+                        <img src="Assets/images/Logo2.png" data-aos="fade-up" alt="Company Logo">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card contact-card">
+                            <div class="card-body">
+                                <div class="row" style="color: white;">
+                                    <div class="col-md-6">
+                                        <h5 class="footer-add-title" data-aos="fade-up">Address 1:</h5>
+                                        <p class="footer-add-txt" data-aos="fade-up">A 402, Satva Hi-Life, Opp. Madhuvan
+                                            Bungalow, Nr.
+                                            Ratnam Status, Sola, Ahmedabad-380060 (Gujarat)</p>
+                                        <h5 class="footer-add-title" data-aos="fade-up">Product:</h5>
+                                        <ul>
+                                            <li class="footer-pro-txt" data-aos="fade-up">Building with Mezzanines</li>
+                                            <li class="footer-pro-txt" data-aos="fade-up">Multi-storeyed buildings</li>
+                                            <li class="footer-pro-txt" data-aos="fade-up">Sandwich PU/PIR Panels</li>
+                                            <li class="footer-pro-txt" data-aos="fade-up">Rockwool Fireproof Panels</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="footer-add-title" data-aos="fade-up">Address 2:</h5>
+                                        <p class="footer-add-txt" data-aos="fade-up">A 402, Satva Hi-Life, Opp. Madhuvan
+                                            Bungalow, Nr.
+                                            Ratnam Status, Sola,
+                                            Ahmedabad-380060 (Gujarat)</p>
+                                        <h5 class="footer-email-title" data-aos="fade-up">Email ID:</h5>
+                                        <a class="footer-email-txt" href="mailto:info@izonpeb.com"
+                                            data-aos="fade-up">info@izonpeb.com</a>
+                                        <h5 class="footer-contact-title" data-aos="fade-up">Contact:</h5>
+                                        <a class="footer-contact-txt" href="tel:+919725768646" data-aos="fade-up"
+                                            data-aos-delay="300">+91 97257 68646</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="Assets/js/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

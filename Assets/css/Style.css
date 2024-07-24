@@ -2581,7 +2581,7 @@
     --------------------------------------------------------------------------*/
     
     .structue-bg {
-        object-fit: cover;
+        object-fit: fill;
         width: 95%;
         margin: auto;
         height: 550px;
