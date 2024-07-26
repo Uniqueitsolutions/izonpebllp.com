@@ -4,342 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Frame - IZON PEB LLP</title>
+    <title>Document</title>
 
-    <link rel="stylesheet" href="Assets/css/Style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f7ff;
+            overflow: hidden;
+        }
+
+        .toast {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            border-radius: 12px;
+            background: #fff;
+            padding: 10px 25px 10px 20px;
+            box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transform: translateX(calc(100% + 30px));
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+        }
+
+        .toast.active {
+            transform: translateX(0%);
+        }
+
+        .toast .toast-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .toast-content .check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            min-width: 35px;
+            background-color: #4070f4;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 50%;
+        }
+
+        .toast-content .message {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+        }
+
+        .message .text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #666666;
+        }
+
+        .message .text.text-1 {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .toast .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            padding: 5px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .toast .close:hover {
+            opacity: 1;
+        }
+
+        .toast .progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+
+        }
+
+        .toast .progress:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #4070f4;
+        }
+
+        .progress.active:before {
+            animation: progress 5s linear forwards;
+        }
+
+        @keyframes progress {
+            100% {
+                right: 100%;
+            }
+        }
+
+       
+
+        .toast.active~button {
+            pointer-events: none;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+    <div class="toast ">
 
-    <!-- Navbarr -->
+        <div class="toast-content">
 
-    <nav class="full-navbar navbar navbar-expand-lg">
-        <div class="container-fluid pl-3 nav-container">
-            <div class="navLogo ml-4">
-                <img src="Assets/images/Logo.png" width="60px" height="50px" alt="Unique it solution img"
-                    class="ml-2 footer-logo-img ">
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navItems collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html" id="home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="about-us">About Us</a>
-                    </li>
-                    <li class="nav-items dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            PEB
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link"
-                                    href="structural.html">structural</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link"
-                                    href="mainFrame.html">Main Frame</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link" href="#">Another
-                                    action</a></li>
-                            <li class="nav-item">
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="nav-item"><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="career">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="contact-us">Contact Us</a>
-                    </li>
-                </ul>
+            <div class="message">
+                <span class="text text-1">Message Sent Successfully</span>
             </div>
         </div>
-    </nav>
+        <i class="fa-solid fa-xmark close"></i>
 
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="progress "></div>
+    </div>
 
-
-    <section class="container-fluid">
-        <!-- Main fram about -->
-        <div class="mainframe text-center">
-            <img src="Assets/images/bg-about-2.webp" data-aos="fade-up" data-aos-duration="500" class="structue-bg" alt="">
-        </div>
-        <div class="mainfram-txt mx-auto">
-            <p class="mainfram-title text-capitalize" data-aos="fade-up"> <span>MAIN</span> FRAME</p>
-
-            <ul class="mainfram-lists">
-                <li data-aos="fade-up">The main framing basically includes the rigid steel frames of the building.
-                    The PESB rigid frame comprises tapered columns and tapered rafters. Flanges
-                    shall be connected to webs by means of a continuous fillet weld on one side.</li>
-                <li data-aos="fade-up" data-aos-delay="200">The main framing basically includes the rigid steel frames of the building.
-                    The PESB rigid frame comprises tapered columns and tapered rafters. Flanges
-                    shall be connected to webs by means of a continuous fillet weld on one side.</li>
-                <li data-aos="fade-up" data-aos-delay="300">The main framing basically includes the rigid steel frames of the building.
-                    The PESB rigid frame comprises tapered columns and tapered rafters. Flanges
-                    shall be connected to webs by means of a continuous fillet weld on one side.</li>
-            </ul>
-        </div>
-
-
-        <!-- secondary members -->
-        <div class="row">
-            <h2 class="secpndary-title text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">SECONDARY MEMBERS</h2>
-        </div>
-
-        <!-- secondary members cards -->
-        <div class="row secondary-cards row-gap-3 mx-auto justify-content-center column-gap-4 mb-4 mt-5">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 secondary-card">
-                <div class="mx-auto secondary-img">
-                    <img src="Assets/images/secondary-1.webp" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" class=" " alt="">
-                </div>
-                <ul class="secondary-card-title">
-                    <li data-aos="fade-up" data-aos-delay="300">Purlins and Girts</li>
-                </ul>
-                <ul class="secondary-card-para">
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        Purlins are used on the roofing structure; Grits are used on the walls and Eave struts are used
-                        at the intersection of the sidewall and the roof. Purlins and girts shall be cold-formed “Z”
-                        sections with stiffened flanges.
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 secondary-card">
-                <div class="mx-auto secondary-img">
-                    <img src="Assets/images/secondary-2.webp" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="400" class=" " alt="">
-                </div>
-                <ul class="secondary-card-title">
-                    <li data-aos="fade-up" data-aos-delay="300">Purlins and Girts</li>
-                </ul>
-                <ul class="secondary-card-para">
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        Eave struts shall be unequal flange cold-formed “C” sections. Eave struts are 200 mm deep with a
-                        104 mm wide top flange, a 118 mm wide bottom flange, both are formed parallel to the roof slope.
-                        Each flange has a 24 mm stiffener lip.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row secondary-cards row-gap-3 mx-auto justify-content-center column-gap-4">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 secondary-card">
-                <div class="mx-auto secondary-img">
-                    <img src="Assets/images/secondary-3.webp" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="400" class=" " alt="">
-                </div>
-                <ul class="secondary-card-title">
-                    <li data-aos="fade-up" data-aos-delay="300">Purlins and Girts</li>
-                </ul>
-                <ul class="secondary-card-para">
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        Cable bracing is a primary member that ensures the stability of the building against forces in
-                        the longitudinal direction such as wind, cranes, and earthquakes. Diagonal bracing in the roof
-                        and side walls shall be used.
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 secondary-card">
-                <div class="mx-auto secondary-img">
-                    <img src="Assets/images/secondary-4.webp" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="400" class=" " alt="">
-                </div>
-                <ul class="secondary-card-title">
-                    <li data-aos="fade-up" data-aos-delay="300">Purlins and Girts</li>
-                </ul>
-                <ul class="secondary-card-para">
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        The main use of Open steel web steel joints is to provide support for the roof or floor deck and
-                        to transfer the load imposed on the deck to the structural frames (beam and column).
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- roff wall title -->
-        <div class="roof-wall mx-auto">
-            <h2 class="roof-title" data-aos="fade-up" >ROOF WALL</h2>
-            <p class="roof-line mt-3" data-aos="fade-up" data-aos-delay="100" ></p>
-        </div>
-        <!-- roof wall details -->
-        <div class="roof-wall-details mt-5">
-            <div class="text-center">
-                <img src="Assets/images/roof-wall.webp"  class="roof-wall-bg img-fluid" alt="">
-            </div>
-            <div class="text-end roof-round">
-                <img src="Assets/images/roof-wall-rounded.webp" data-aos="fase-up" data-aos-delay="200" data-aos-duration="500" class="roof-ronded-bg" alt="">
-            </div>
-            <div class="roof-paint" data-aos="fase-up" data-aos-delay="200" data-aos-duration="300">
-                <p class="roof-paint-title" >Paints and Finishes</p>
-                <p class="roof-paint-para">All the primary and secondary steels are coated with red oxide. for special
-                    cases of paints, the
-                    structure passed through a shot-blast booth for better anti-corrosion.</p>
-            </div>
-
-            <div>
-            </div>
-        </div>
-
-        <div class="row claading-main justify-content-center mx-auto mb-4">
-            <div class="col-lg-6 col-md-6 text-center">
-                <img src="Assets/images/puf.webp" class="img-fluid clading-img" alt="">
-            </div>
-            <div class="col-lg-6 col-md-6 claading-txt">
-                <div class="claading">
-                    <p class="claading-title">Claddings</p>
-                    <p class="claading-para">Our sheeting is a multi-layer coated profile to ensure a longer life under
-                        different weather conditions and enhanced aesthetics. Claddings can be used for roofs and walls.
-                        to ensure a longer life under.
-                    </p>
-                </div>
-                <div class="claading">
-                    <p class="claading-title">Doors and Windows</p>
-                    <p class="claading-para">MS or Aluminium framed doors and windows are fixed to the purlins or the
-                        supporting profiled steel either by welding or bolted to the flanges already fixed to the
-                        purlins. bolted to the flanges already fixed to the
-                        purlins.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row claading-main justify-content-center mx-auto mb-4 sheeting">
-            <div class="col-lg-6 col-md-6 claading-txt">
-                <div class="claading">
-                    <p class="claading-title">Sheeting</p>
-                    <p class="claading-para">Ribbed steel is used as roof and wall sheeting. The sheets are generally
-                        produced from steel coils having thickness 0.47 mm to 0.8 mm high tensile steel. We should be a
-                        focus on roofing panels that should sustain snow loads as well as cyclonic winds. The panel
-                        conforms to ASTM A792M Grade 340/550 MPA and is coated with a protective layer of Galvalume,
-                        which is a 42.5% zinc and 55 % aluminium alloy coating (150 GSM). Panels are available in 4
-                        nominal thicknesses: 0.475 mm, 0.50 mm, 0.55 mm, 0.76 mm and in all standard colours.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 text-center">
-                <img src="Assets/images/sheeting.webp" class="img-fluid clading-img" alt="">
-            </div>
-        </div>
-        <div class="row claading-main justify-content-center mx-auto mb-5 puf">
-            <div class="col-lg-6 col-md-6 text-center">
-                <img src="Assets/images/puf.webp" class="img-fluid clading-img" alt="">
-            </div>
-            <div class="col-lg-6 col-md-6 claading-txt">
-                <div class="claading">
-                    <p class="claading-title">PUF Panels</p>
-                    <p class="claading-para">The main use of puf panels is to cover main steel frame. Sandwich panels
-                        comprise an exterior metal skin, a Polyurethane core and an interior flat skin made of metal.
-                        comprise an exterior metal skin, a Polyurethane core and an interior flat skin made of metal.
-
-                    </p>
-                </div>
-            </div>
-        </div>
-        </div>
-
-    </section>
-
-
-    <!-------------------         footer section       ---------------------->
-
-    <footer>
-        <div class="contact-section">
-            <div class="container contact-container">
-                <div class="row justify-content-center contact-info" style="font-family: urbanist;">
-                    <div class="col-md-3 contact-logo">
-                        <img src="Assets/images/Logo2.png" data-aos="fade-up" alt="Company Logo">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card contact-card">
-                            <div class="card-body">
-                                <div class="row" style="color: white;">
-                                    <div class="col-md-6">
-                                        <h5 class="footer-add-title" data-aos="fade-up">Address 1:</h5>
-                                        <p class="footer-add-txt" data-aos="fade-up">A 402, Satva Hi-Life, Opp. Madhuvan
-                                            Bungalow, Nr.
-                                            Ratnam Status, Sola, Ahmedabad-380060 (Gujarat)</p>
-                                        <h5 class="footer-add-title" data-aos="fade-up">Product:</h5>
-                                        <ul>
-                                            <li class="footer-pro-txt" data-aos="fade-up">Building with Mezzanines</li>
-                                            <li class="footer-pro-txt" data-aos="fade-up">Multi-storeyed buildings</li>
-                                            <li class="footer-pro-txt" data-aos="fade-up">Sandwich PU/PIR Panels</li>
-                                            <li class="footer-pro-txt" data-aos="fade-up">Rockwool Fireproof Panels</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 class="footer-add-title" data-aos="fade-up">Address 2:</h5>
-                                        <p class="footer-add-txt" data-aos="fade-up">A 402, Satva Hi-Life, Opp. Madhuvan
-                                            Bungalow, Nr.
-                                            Ratnam Status, Sola,
-                                            Ahmedabad-380060 (Gujarat)</p>
-                                        <h5 class="footer-email-title" data-aos="fade-up">Email ID:</h5>
-                                        <a class="footer-email-txt" href="mailto:info@izonpeb.com"
-                                            data-aos="fade-up">info@izonpeb.com</a>
-                                        <h5 class="footer-contact-title" data-aos="fade-up">Contact:</h5>
-                                        <a class="footer-contact-txt" href="tel:+919725768646" data-aos="fade-up"
-                                            data-aos-delay="300">+91 97257 68646</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="Assets/js/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+    <button>Show Toast</button>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll(".dropdown-item-link").forEach(function (link) {
-                link.addEventListener("click", function (event) {
-                    // Remove the class from all dropdown items
-                    document.querySelectorAll(".dropdown-item-link").forEach(function (item) {
-                        item.classList.remove("highlighted");
-                    });
-                    // Add the class to the clicked item
-                    this.classList.add("highlighted");
-                    // event.preventDefault(); // Prevent the default link behavior if necessary
-                });
-            });
-        });
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const navLinks = document.querySelectorAll('.nav-link');
+        const button = document.querySelector("button"),
+            toast = document.querySelector(".toast");
+        (closeIcon = document.querySelector(".close")),
+            (progress = document.querySelector(".progress"));
 
-            navLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    // Remove 'active' class from all nav items
-                    navLinks.forEach(nav => nav.parentElement.classList.remove('active'));
+        let timer1, timer2;
 
-                    // Add 'active' class to the clicked nav item
-                    this.parentElement.classList.add('active');
-                });
-            });
+        button.addEventListener("click", () => {
+            console.log(button);
+            toast.classList.add("active");
+            progress.classList.add("active");
+
+            timer1 = setTimeout(() => {
+                toast.classList.remove("active");
+            }, 5000); //1s = 1000 milliseconds
+
+            timer2 = setTimeout(() => {
+                progress.classList.remove("active");
+            }, 5300);
         });
-        AOS.init({
-            once: true
+
+        closeIcon.addEventListener("click", () => {
+            toast.classList.remove("active");
+
+            setTimeout(() => {
+                progress.classList.remove("active");
+            }, 300);
+
+            clearTimeout(timer1);
+            clearTimeout(timer2);
         });
+
     </script>
+
 </body>
 
 </html>

@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - IZON PEB LLP</title>
-
+    <title>Document</title>
 
     <link rel="stylesheet" href="Assets/css/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +19,25 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        
     </style>
 </head>
 
 <body>
 
+    <div class="toast">
+
+        <div class="toast-content">
+
+            <div class="message">
+                <span class="text text-1">Message Sent Successfully</span>
+            </div>
+        </div>
+        <!-- <i class="fa-solid fa-xmark close"></i> -->
+
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="progress "></div>
+    </div>
 
     <!-- Navbarr -->
 
@@ -68,7 +81,7 @@
                         <a class="nav-link" href="#" id="project">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="career.html" id="career">Career</a>
+                        <a class="nav-link" href="#" id="career">Career</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contactUs.html" id="contact-us">Contact Us</a>
@@ -79,135 +92,66 @@
     </nav>
 
 
-    <section class="container-fluid">
-        <!--------------------------        OUR PRODUCT         ------------------------------>
-        <div class="about-izon our  row ">
-            <div class=" col-12 col-md-12 col-sm-12 col-lg-12 col-xl-6  text-center">
-                <img src="Assets/images/product-bg.webp" data-aos="fade-up" class="img-fluid product-bg-img"
-                    alt="IZON PEB LLP ' img">
-            </div>
-            <div
-                class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-6 d-flex flex-column justify-content-center about-izon-txt ">
-                <p class="about-izon-title" data-aos="fade-up">OUR PRODUCT</p>
-                <div class="about-izon-line" data-aos="fade-up"></div>
-                <p class="our-product-subtitle" data-aos="fade-up" data-aos-delay="100">BUILDINGS WITH MEZZANINES</p>
-                <p class="our-products-para1" data-aos="fade-up" data-aos-delay="200"><span>IZON PEB</span> is one of
-                    the emerging companies
-                    of India
-                    where
-                    Pre-Engineering Steel Structures are concerned. PEB LLP, has come into existence to satisfy
-                    customer’s need with the best quality of work in the minimum time span. People and technology both
-                    are the main supporting pillars to witness the growth of the company with the guidance of the
-                    supporting team and
-                    enriched leaders.</p>
-                <p class="our-products-para1" data-aos="fade-up" data-aos-delay="300">Mezzanine is a cost-effective and
-                    time efficient way to
-                    create additional storage space in any new or existing building. Messanines create addiitioanl floor
-                    space by going up not out.</p>
+    <!------------------         Main Section       ----------------------------->
 
-            </div>
-        </div>
+    <div class="careere-title mx-auto">
+        <h2 class=" ">Career</h2>
+        <div class="careere-line"></div>
+    </div>
 
-        <!--------------------------        multi stored products PRODUCT         ------------------------------>
-        <div class="multi-stored-products row ">
-            <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-6 d-flex flex-column about-izon-txt ">
-                <div class="multi-stored-txt mx-auto">
-                    <p class="multi-stored-title" data-aos="fade-up">MULTI - STOREYED BUILDING</p>
-                    <div class="multi-line" data-aos="fade-up"></div>
-                    <ul class="multi-stored-ul">
-                        <li data-aos="fade-up" data-aos-delay="100">The Pre - Engineering steel building technology in
-                            multi - storeyed construction in multi -
-                            storeyed construction is very popular in western countries.</li>
-                        <li data-aos="fade-up" data-aos-delay="200">PEB LLP, is one of the emerging companies of India
-                            where Pre-Engineering Steel Structures
-                            are
-                            concerned. PEB LLP, has come into existence to satisfy customer’s need with the best quality
-                            of
-                            work in the minimum time span. People and technology both are the main supporting pillars to
-                            witness the growth of the company with the guidance of the supporting team and
-                            enriched leaders.</li>
-                        <li data-aos="fade-up" data-aos-delay="300">The Pre - Engineering steel building technology in
-                            multi - storeyed construction in multi -
-                            storeyed construction is very popular in western countries.</li>
-                    </ul>
+    <div class="career-txt mx-auto">
+        <p>Attracting and hiring the best talent is always an important area of focus for us, as we believe that our
+            people are not only our greatest asset but also our biggest strength. Join team of the fastest growing PEB
+            menufacturing company. We have many positions open which might fit you.
+        </p>
+        <p>
+            All Candidates except HR / Administrative / Accounts must have technical background and certification for
+            the same.
+        </p>
+    </div>
+
+
+    <form id="career-form" action="">
+        <div class="careere-form mx-auto">
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="Full Name" required>
+                        <label id="floatInput" for="floatingInputGrid">Name</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" required>
+                        <label id="floatInput" for="floatingInputGrid">Contact No.</label>
+                    </div>
                 </div>
             </div>
-            <div class=" col-12 col-md-12 col-sm-12 col-lg-12 col-xl-6  text-center">
-                <div class="multi-stored-img">
-                    <img src="Assets/images/multi-stored-bg.webp" data-aos="fade-up" class="img-fluid multi-bg-img"
-                        alt="IZON PEB LLP ' img">
-                </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@gmail.com" required>
+                <label id="floatInput" for="floatingTextarea">Email </label>
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" placeholder="position" required>
+                <label id="floatInput" for="floatingTextarea">Position </label>
+            </div>
+
+            <div class="file-upload">
+                <input type="text" placeholder="No file chosen" required readonly>
+                <input type="file" id="fileInput" >
+                <label for="fileInput">Upload File</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" cols="50" placeholder="Leave a comment here"
+                    id="floatingTextarea" required></textarea>
+                <label id="floatInput"  for="floatingTextarea">Message</label>
+            </div>
+
+            <div class="submit-button mx-auto">
+                <button type="submit" id="submitbtn" class="submitbtn">SUBMIT</button>
             </div>
         </div>
-
-
-        <!-------------------------         Products Type structural            -------------------------------->
-        <div class="products-structre-type mx-auto">
-            <h2 class="type-structural mx-auto" data-aos="fade-up">This type of Structural Concept is generally used to
-                build:</h2>
-
-            <ul class="type-structural-list">
-                <li data-aos="fade-up" data-aos-delay="100">Speedy and time savvy construction than RCC.</li>
-                <li data-aos="fade-up" data-aos-delay="200">Smooth and hassle - free execution at site.</li>
-                <li data-aos="fade-up" data-aos-delay="300">Earthquake resistant design.</li>
-                <li data-aos="fade-up" data-aos-delay="400">Greater ease of expansion and modification in steel
-                    buildings.</li>
-                <li data-aos="fade-up" data-aos-delay="500">Larger spans without intermediate columns can be effectively
-                    achieved in comparison to RCC.</li>
-            </ul>
-        </div>
-
-
-        <!--------------------------        PU pannels PRODUCT         ------------------------------>
-        <div class="pu-pannel-products row ">
-
-            <div class=" col-12 col-md-12 col-sm-12 col-lg-12 col-xl-6  text-center">
-                <img src="Assets/images/bg-vedio.webp" data-aos="fade-up" class="img-fluid product-bg-img"
-                    alt="IZON PEB LLP ' img">
-            </div>
-            <div
-                class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-6 d-flex flex-column justify-content-center about-izon-txt ">
-                <p class="pu-pannel-title" data-aos="fade-up" data-aos-delay="100">SANDWICH PU / PIR PANELS</p>
-                <div class="pu-pannel-line" data-aos="fade-up" data-aos-delay="200"></div>
-                <ul class="pu-pannel-list" data-aos="fade-up" data-aos-delay="300">
-                    <li>For big industrial structures such as refrigerated warehouses, office complexes, exhibition
-                        halls, fair pavilions, schools and sports halls, the preferred system nowadays is metal - faced
-                        polyrethane sandwich panels. Specially molded tongue and groove joints are included with
-                        polyrethane sandwich panels to ensure optimal integrity and a flawless fit. Fat, simple and
-                        affordable assemb;ly is involved.
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
-        <!--------------------------        rockwool-products PRODUCT         ------------------------------>
-        <div class="rockwool-products row ">
-            <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-6 d-flex flex-column about-izon-txt ">
-                <div class="multi-stored-txt mx-auto">
-                    <p class="rockwool-title" data-aos="fade-up">ROCKWOOL FIREPROOF PANELS</p>
-                    <div class="rockwool-line" data-aos="fade-up"></div>
-                    <ul class="rockwool-ul">
-                        <li data-aos="fade-up" data-aos-delay="100">For big industrial structures such as refrigerated
-                            warehouses, office complexes, exhibition halls, fair pavilions, schools and sports halls,
-                            the preferred system nowadays is metal - faced polyrethane sandwich panels. Specially molded
-                            tongue and groove joints are included with polyrethane sandwich panels to ensure optimal
-                            integrity and a flawless fit. Fat, simple and affordable assemb;ly is involved.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class=" col-12 col-md-12 col-sm-12 col-lg-12 col-xl-6  text-center">
-                <div class="multi-stored-img">
-                    <img src="Assets/images/roof-wall.webp" data-aos="fade-up" class="img-fluid multi-bg-img"
-                        alt="IZON PEB LLP ' img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
+    </form>
 
     <!-------------------         footer section       ---------------------->
 
@@ -264,6 +208,57 @@
         crossorigin="anonymous"></script>
 
     <script>
+
+        const button = document.getElementById("submitbtn");
+        //     toast = document.querySelector(".toast");
+        // (closeIcon = document.querySelector(".close")),
+        //     (progress = document.querySelector(".progress"));
+
+        // let timer1, timer2;
+        // console.log(button);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Handle form submission
+            document.getElementById("career-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                let toast = document.querySelector(".toast");
+                toast.classList.add("active");
+                console.log(toast);
+
+                setTimeout(() => {
+                    toast.classList.remove("active");
+                }, 5000); // Hide after 5 seconds
+
+                let progress = document.querySelector(".progress");
+                progress.classList.add("active");
+
+                setTimeout(() => {
+                    progress.classList.remove("active");
+                }, 5300); // Hide after 5.3 seconds
+            });
+
+            // Handle toast close button
+            // const closeIcon = document.querySelector(".close");
+            // closeIcon.addEventListener("click", () => {
+            //     document.querySelector(".toast").classList.remove("active");
+            // });
+        });
+
+
+
+
+
+        const fileInput = document.getElementById('fileInput');
+        const textInput = fileInput.previousElementSibling;
+
+        fileInput.addEventListener('change', function () {
+            if (fileInput.files.length > 0) {
+                textInput.value = fileInput.files[0].name;
+            } else {
+                textInput.value = '';
+            }
+        });
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll(".dropdown-item-link").forEach(function (link) {
                 link.addEventListener("click", function (event) {

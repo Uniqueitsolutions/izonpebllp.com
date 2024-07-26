@@ -3427,13 +3427,227 @@
     --------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------
 
-                                About PEBQ start
+                                Products Page start
 
     --------------------------------------------------------------------------*/
 
+    .our-product-subtitle {
+        margin-top: 40px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+        color: var(--bg-grey);
+    }
 
+    .product-bg-img {
+        width: 95%;
+        margin-left: 5%;
+        border-radius: 10px;
+        box-shadow: 0px 7px 10px 0px #00000040;
+    }
 
+    .our-products-para1 {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        color: #000000;
+    }
 
+    .our-products-para1 span {
+        font-weight: 600;
+    }
+
+    .multi-stored-products {
+        margin-top: 70px;
+        background-color: var(--txt-lightred);
+        padding: 50px 0px;
+    }
+
+    .multi-stored-products .multi-stored-title {
+        font-family: Urbanist;
+        font-size: 38px;
+        font-weight: 700;
+        text-align: left;
+        color: var(--txt-white);
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+    }
+
+    .multi-line {
+        border: 3px solid var(--txt-white);
+        border-radius: 3px;
+        width: 350px;
+        height: 0px;
+        margin-top: 4%;
+        margin-left: -9%;
+
+    }
+
+    .multi-stored-ul {
+        margin-top: 5%;
+    }
+
+    .multi-stored-ul li {
+        color: var(--txt-white);
+        margin-bottom: 4%;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .multi-stored-txt {
+        width: 90%;
+    }
+
+    .multi-stored-img {
+        width: 95%;
+    }
+
+    .multi-bg-img {
+        width: 95%;
+        border-radius: 10px;
+        box-shadow: 0px 7px 10px 0px #00000040;
+    }
+
+    .products-structre-type {
+        margin-top: 4%;
+        width: 90%;
+    }
+
+    @media screen and (max-width: 770px) and (min-width: 431px) {
+        .about-izon .about-izon-line {
+            margin-left: -13%;
+        }
+
+        .multi-stored-products {
+            flex-direction: column-reverse;
+        }
+
+        .multi-bg-img {
+
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 430px) {
+        .about-izon .about-izon-line {
+            margin-left: -13%;
+        }
+
+        .multi-stored-products {
+            flex-direction: column-reverse;
+        }
+
+        .multi-stored-products .multi-stored-title {
+            font-size: 32px;
+        }
+
+        .multi-line {
+            width: 220px;
+            margin-top: 6%;
+        }
+
+        .multi-stored-ul {
+            margin-top: 11%;
+        }
+
+        .multi-stored-ul li {
+            font-size: 15px;
+        }
+
+        .multi-stored-txt {
+            margin-top: 10%;
+        }
+    }
+
+    .pu-pannel-products {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 50px 0px;
+        background-color: #58595BA6;
+    }
+
+    .pu-pannel-title {
+        font-family: Urbanist;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: left;
+        color: var(--txt-white);
+        letter-spacing: 2px;
+    }
+
+    .pu-pannel-line {
+        border: 3px solid var(--txt-white);
+        border-radius: 3px;
+        width: 250px;
+        height: 0px;
+        margin-top: 4%;
+    }
+
+    .pu-pannel-list li::marker {
+        color: var(--txt-white);
+    }
+
+    .pu-pannel-list li {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        color: var(--txt-white);
+        margin-top: 5%;
+    }
+
+    .rockwool-title {
+        font-family: Heebo;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+        color: var(--txt-lightred);
+    }
+
+    .rockwool-line {
+        border: 3px solid #EF4136;
+        width: 177.07px;
+    }
+
+    .rockwool-products {
+        margin-bottom: 50px;
+    }
+
+    .rockwool-ul li {
+        margin-top: 5%;
+        color: var(--bg-grey);
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    @media screen and (max-width:770px) and (min-width: 430px) {
+        .rockwool-products {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+        }
+    }
+
+    @media screen and (max-width: 429px) {
+        .rockwool-products {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+        }
+        .rockwool-title {
+            font-family: Heebo;
+            /* font-size: 30px; */
+        }
+
+        .rockwool-ul li {
+            font-size: 16px;
+        }
+    }
 
 
 
@@ -3442,27 +3656,256 @@
 
         /* ---------------------------------------------------------------------------
 
-                                About PEBQ end
+                                Products page end
 
     --------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------
 
-                                About PEBQ start
+                                Careere start
 
     --------------------------------------------------------------------------*/
 
 
 
 
+    .careere-title {
+        width: fit-content;
+    }
+
+    .careere-title .careere-line {
+        border: 2px solid #EF4136;
+        width: 101px;
+        border-radius: 5px;
+
+    }
+
+    .careere-title h2 {
+        font-family: Urbanist;
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--txt-lightred);
+        margin-top: 20px;
+        width: fit-content;
+    }
+
+    .career-txt {
+        margin-top: 2%;
+        width: 95%;
+    }
+
+    .career-txt p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+
+    }
+
+    .careere-form {
+        width: 95%;
+        margin-top: 3%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
 
 
+    .careere-form input {
+        border: 1px solid var(--txt-lightred);
+        box-shadow: 0px 4px 4px 0px #00000040;
+
+        box-shadow: 4px 0px 4px 0px #00000040;
+
+    }
+
+    .careere-form textarea {
+        border: 1px solid var(--txt-lightred);
+        box-shadow: 0px 4px 4px 0px #00000040;
+        box-shadow: 4px 0px 4px 0px #00000040;
+        min-height: 100px !important;
+    }
+
+    .careere-form select {
+        border: 1px solid var(--txt-lightred);
+        box-shadow: 0px 4px 4px 0px #00000040;
+        box-shadow: 4px 0px 4px 0px #00000040;
+    }
+
+    #floatInput {
+        color: var(--txt-lightred);
+        font-weight: 400;
+    }
+
+    .file-upload {
+        display: flex;
+        align-items: center;
+    }
+
+    .file-upload input[type="file"] {
+        display: none;
+    }
+
+    .file-upload label {
+        cursor: pointer;
+        padding: 11px 20px;
+        background-color: var(--txt-lightred);
+        color: #fff;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .file-upload input[type="text"] {
+        padding: 10px;
+        border: 1px solid var(--txt-lightred);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        flex: 2;
+    }
+
+    .toast:not(.show) {
+        display: block !important;
+    }
+
+    .submit-button button {
+        background-color: var(--txt-lightred);
+        box-shadow: 0px 4px 4px 0px #00000040;
+        box-shadow: 4px 0px 4px 0px #00000040;
+        border: 1px solid var(--txt-lightred);
+        color: var(--txt-white);
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 10px 25px;
+    }
 
 
+    .toast {
+        position: fixed;
+        top: 10%;
+        right: 25px;
+        border-radius: 12px;
+        background: #fff;
+        padding: 15px 25px 15px 20px;
+        box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transform: translateX(calc(100% + 30px));
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+    }
 
+    .toast.active {
+        transform: translateX(0) !important;
+        /* Slide into view */
+    }
+
+    .toast .toast-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .toast-content .check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        min-width: 35px;
+        background-color: var(--txt-lightred);
+        color: var(--txt-white);
+        font-size: 20px;
+        border-radius: 50%;
+    }
+
+    .toast-content .message {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .message .text {
+        font-size: 18px;
+        font-weight: 400;
+        color: #666666;
+    }
+
+    .message .text.text-1 {
+        font-weight: 600;
+        color: #333;
+    }
+
+    .toast .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        padding: 5px;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .toast .close:hover {
+        opacity: 1;
+    }
+
+    .toast .progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100%;
+    }
+
+    .toast .progress:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--txt-lightred);
+    }
+
+    .progress.active:before {
+        animation: progress 5s linear forwards;
+    }
+
+    @keyframes progress {
+        100% {
+            right: 100%;
+        }
+    }
+
+
+    .submitbtn {
+        padding: 12px 20px;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        background-color: var(--txt-lightred);
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: var(--txt-lightred);
+    }
+
+    .toast.active~button {
+        pointer-events: none;
+    }
+
+    @media screen and (max-width:350px) {
+        .file-upload label{
+            padding: 0px 15px
+        }
+        
+    }
 
         /* ---------------------------------------------------------------------------
 
-                                About PEBQ end
+                                Careere end
 
     --------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------
