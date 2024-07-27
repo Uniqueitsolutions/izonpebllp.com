@@ -218,16 +218,67 @@
         contactForm.addEventListener("submit", (e) => {
             e.preventDefault();
             let name = document.getElementById('name').value;
-            let contat = document.getElementById('contact').value;
+            let contact = document.getElementById('contact').value;
             let mail = document.getElementById('mail').value;
             let message = document.getElementById('message').value;
 
+            const emailData = {
+                // "Host": "smtp.gmail.co",
+                "Host": "216.10.241.228",
+                "SenderEmail": "arpit.padmani@theuniqueitsolution.com",
+                "SenderEmailPassword": "arpit@1234567890",
+                "ReciverEmail": "padmaniarpit195@gmail.com",
+                "Body": `Name: ${name}
+                Number: ${contact}
+                Email: ${mail}
+                Message: ${message}`
+            };
+
+            const apiUrl = 'https://api.theuniqueitsolution.com/mail/Api/sendmailapi.php';
+
+            const headers = {
+                'Content-Type': 'application/json',
+            };
+
+            if (!isValidEmail(mail)) {
+                alert('Please enter a valid email address.', ' col-12  text-center border-1 py-2 border-warning border text-warning');
+                return;
+            }
+
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: headers,
+                body: JSON.stringify(emailData)
+            })
+                .then(data => {
+                    if (data.status) {
+                        console.log(data);
+                        alert('Message sent successfully', 'col-12  text-center border-1 py-2 border-primary border text-primary');
+                        clearForm();
+                    } else {
+                        alert('Message sending failed. Please try again later.', ' col-12  text-center border-1 py-2 border-danger border text-danger');
+                    }
+                })
+                .catch(error => {
+                    alert('An error occurred while sending the message. Please try again later.', 'col-12  text-center border-1 py-2 error');
+                });
             console.log(name);
-            console.log(contat);
+            console.log(contact);
             console.log(mail);
             console.log(message);
-
         });
+        function isValidEmail(mail) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(mail);
+            }
+
+        function clearForm() {
+            document.getElementById('name').value = '';
+            document.getElementById('contact').value = '';
+            document.getElementById('mail').value = '';
+            // document.getElementById('subject').value = '';
+            document.getElementById('message').value = '';
+        }
 
 
         document.addEventListener("DOMContentLoaded", function () {
