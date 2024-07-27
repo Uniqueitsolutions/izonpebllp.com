@@ -151,11 +151,26 @@
                         <label id="floatInput" for="floatingTextarea">Message</label>
                     </div>
 
-                    <button type="submit" data-aos="fade-up" data-aos-delay="200" class="contact-btn">SUBMIT</button>
+                    <button type="submit" id="submitbtn" data-aos="fade-up" data-aos-delay="200" class="contact-btn">SUBMIT</button>
                 </form>
             </div>
         </div>
     </section>
+
+
+    <div class="toast">
+
+        <div class="toast-content">
+
+            <div class="message">
+                <span class="text text-1">Message Sent Successfully</span>
+            </div>
+        </div>
+        <!-- <i class="fa-solid fa-xmark close"></i> -->
+
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="progress "></div>
+    </div>
 
 
     <!-------------------         footer section       ---------------------->
@@ -213,6 +228,8 @@
         crossorigin="anonymous"></script>
 
     <script>
+        const button = document.getElementById("submitbtn");
+
         const contactForm = document.getElementById('contactForm');
 
         contactForm.addEventListener("submit", (e) => {
@@ -253,8 +270,24 @@
                 .then(data => {
                     if (data.status) {
                         console.log(data);
-                        alert('Message sent successfully', 'col-12  text-center border-1 py-2 border-primary border text-primary');
+                        let toast = document.querySelector(".toast");
+                        console.log(toast);
+                        toast.classList.add("active");
+
+                        setTimeout(() => {
+                            toast.classList.remove("active");
+                        }, 5000); // Hide after 5 seconds
+
+                        let progress = document.querySelector(".progress");
+                        progress.classList.add("active");
+
+                        setTimeout(() => {
+                            progress.classList.remove("active");
+                        }, 5300);
                         clearForm();
+                        alert('Message sent successfully', 'col-12  text-center border-1 py-2 border-primary border text-primary');
+
+                        
                     } else {
                         alert('Message sending failed. Please try again later.', ' col-12  text-center border-1 py-2 border-danger border text-danger');
                     }
@@ -268,9 +301,9 @@
             console.log(message);
         });
         function isValidEmail(mail) {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return emailRegex.test(mail);
-            }
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(mail);
+        }
 
         function clearForm() {
             document.getElementById('name').value = '';

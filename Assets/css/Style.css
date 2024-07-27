@@ -3888,8 +3888,9 @@
         transition: 0.3s;
     }
 
-    button:hover {
+    #submitbtn:hover {
         background-color: var(--txt-lightred);
+        transition: all 0.5s ease-in-out;
     }
 
     .toast.active~button {
