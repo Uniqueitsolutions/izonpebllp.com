@@ -3085,7 +3085,7 @@
     color: white;
     font-family: Urbanist;
     /* font-size: 60px; */
-    /* font-weight: 500; */
+    /* font-weight: 600; */
 }
 
 .contact-bg {
@@ -3973,6 +3973,10 @@
 
 .contact-detail-card:hover{
     box-shadow: 10px 10px 20px whitesmoke;
+}
+
+.theme-red{
+    color: #EF4136;
 }
 
 /* ---------------------------------------------------------------------------
