@@ -17,6 +17,10 @@
     --grey-border:rgb(231, 231, 233);
 }
 
+*{
+    font-family: Poppins !important;
+}
+
 .navbar {
     background: var(--txt-white);
     height: 72px;
@@ -3081,7 +3085,7 @@
     color: white;
     font-family: Urbanist;
     /* font-size: 60px; */
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .contact-bg {
