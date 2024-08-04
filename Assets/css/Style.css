@@ -3200,6 +3200,10 @@
     font-weight: 400;
 }
 
+.form-control{
+    border-radius: 10px !important;
+}
+
 /* .input-contact {
     width: 100%;
 } */
@@ -3752,6 +3756,7 @@
 #floatInput {
     color: var(--txt-lightred);
     font-weight: 400;
+    border-radius: 10px !important;
 }
 
 .file-upload {
