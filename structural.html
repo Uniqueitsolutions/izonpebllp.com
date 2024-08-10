@@ -1,208 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structural</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structural </title>
+    <link rel="stylesheet" href="Assets/css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="Assets/css/Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <style>
-        @media screen and (max-width: 430px) {
-            .structule img {
-                height: fit-content;
-            }
-
-            .structural-txt {
-                border: 1px solid white;
-                position: absolute;
-                bottom: 10%;
-                right: 5%;
-                z-index: 10;
-                border-radius: 5px;
-                padding: 17px 5%;
-            }
-
-            .structural-para {
-                color: white;
-                font-family: Heebo;
-                font-size: 22px;
-                font-weight: 500;
-                line-height: 15px;
-                text-align: left;
-                margin: 0px;
-            }
-
-            .structural-title {
-                font-size: 19px;
-            }
-
-            .structural-paragraph {
-                font-size: 16px;
-            }
-
+      @media screen and (max-width: 430px) {
+        .structule img {
+          height: fit-content;
         }
+
+        .structural-txt {
+          border: 1px solid white;
+          position: absolute;
+          bottom: 10%;
+          right: 5%;
+          z-index: 10;
+          border-radius: 5px;
+          padding: 17px 5%;
+        }
+
+        .structural-para {
+          color: white;
+          font-family: Heebo;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 15px;
+          text-align: left;
+          margin: 0px;
+        }
+
+        .structural-title {
+          font-size: 19px;
+        }
+
+        .structural-paragraph {
+          font-size: 16px;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="full-navbar navbar navbar-expand-lg">
-        <div class="container-fluid pl-3 nav-container">
-            <div class="navLogo ml-4">
-                <img src="Assets/images/Logo.png" width="60px" height="50px" alt="Unique it solution img"
-                    class="ml-2 footer-logo-img ">
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navItems collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html" id="home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html" id="about-us">About Us</a>
-                    </li>
-                    <li class="nav-items dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            PEB
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link"
-                                    href="structural.html">structural</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link"
-                                    href="mainFrame.html">Main Frame</a></li>
-                            <li class="nav-item"><a class="dropdown-item nav-link dropdown-item-link"
-                                    href="aboutPEBQ.html">About PEBQ</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html" id="products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="career.html" id="career">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactUs.html" id="contact-us">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid pl-3 nav-container">
+        <div class="navLogo ml-4">
+          <img
+            src="Assets/images/Logo.png"
+            width="60px"
+            height="50px"
+            alt="Unique it solution img"
+            class="ml-2 footer-logo-img"
+          />
         </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navItems collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html" id="about-us">About Us</a>
+            </li>
+            <li class="nav-items dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PEB
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a
+                    class="dropdown-item nav-link dropdown-item-link"
+                    href="structural.html"
+                    >structural</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="dropdown-item nav-link dropdown-item-link"
+                    href="mainFrame.html"
+                    >Main Frame</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="dropdown-item nav-link dropdown-item-link"
+                    href="aboutPEBQ.html"
+                    >About PEBQ</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html" id="products"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="career.html" id="career">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html" id="contact-us"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <section class="container-fulid">
-
-        <div class="structule text-center">
-            <img src="Assets/images/structure-bg.webp" class="structue-bg" alt="">
-            <div class="structural-txt">
-                <p class="structural-para">What is Structural Steel ?</p>
-            </div>
+    <section class="container mb-5">
+      <div class="structule text-center">
+        <img
+          src="Assets/images/structure-bg.webp"
+          class="structue-bg shadow"
+          alt=""
+        />
+        <div class="structural-txt">
+          <p class="structural-para">What is Structural Steel?</p>
         </div>
+      </div>
 
-        <div class="structural-steel mx-auto">
-            <ul>
-                <li class="structural-title">Structural Steel Fabrication And Erection</li>
-            </ul>
-            <p class="structural-paragraph">Our Structural Steel division handles fabrication and erection. As we know
-                steel
-                structures
-                are preferred globally compared to conventional concrete structures. With these PEB structures,
-                we get all the flexibility of design and execution of the project. The biggest benefit of PEB is
-                time-saving as these structures are manufactured at a factory and installed at the site.</p>
-            <p class="structural-paragraph">Our Structural Steel division handles fabrication and erection. As we know
-                steel
-                structures
-                are preferred globally compared to conventional concrete structures. With these PEB structures,
-                we get all the flexibility of design and execution of the project. The biggest benefit of PEB is
-                time-saving as these structures are manufactured at a factory and installed at the site.</p>
-        </div>
+      <div class="structural-steel">
+        <h2 class="structural-title">
+          Structural Steel Fabrication And Erection
+        </h2>
+        <ul>
+          <li class="structural-paragraph">
+            <p>
+              Our Structural Steel division handles fabrication and erection. As
+              we know steel structures are preferred globally compared to
+              conventional concrete structures. With these PEB structures, we
+              get all the flexibility of design and execution of the project.
+              The biggest benefit of PEB is time-saving as these structures are
+              manufactured at a factory and installed at the site.
+            </p>
+          </li>
+          <li>
+            <p class="structural-paragraph">
+              Our Structural Steel division handles fabrication and erection. As
+              we know steel structures are preferred globally compared to
+              conventional concrete structures. With these PEB structures, we
+              get all the flexibility of design and execution of the project.
+              The biggest benefit of PEB is time-saving as these structures are
+              manufactured at a factory and installed at the site.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <footer>
-        <div class="contact-section">
-            <div class="container contact-container">
-                <div class="row justify-content-center contact-info" style="font-family: urbanist;">
-                    <div class="col-md-3 contact-logo">
-                        <img src="Assets/images/Logo2.png" data-aos="fade-up" alt="Company Logo">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card contact-card">
-                            <div class="card-body">
-                                <div class="row" style="color: white;">
-                                    <div class="col-md-6">
-                                        <h5 class="footer-add-title" data-aos="fade-up">Address 1:</h5>
-                                        <p class="footer-add-txt" data-aos="fade-up">A 402, Satva Hi-Life, Opp. Madhuvan
-                                            Bungalow, Nr.
-                                            Ratnam Status, Sola, Ahmedabad-380060 (Gujarat)</p>
-                                        <h5 class="footer-add-title" data-aos="fade-up">Product:</h5>
-                                        <ul>
-                                            <li class="footer-pro-txt" data-aos="fade-up">Building with Mezzanines</li>
-                                            <li class="footer-pro-txt" data-aos="fade-up">Multi-storeyed buildings</li>
-                                            <li class="footer-pro-txt" data-aos="fade-up">Sandwich PU/PIR Panels</li>
-                                            <li class="footer-pro-txt" data-aos="fade-up">Rockwool Fireproof Panels</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 class="footer-add-title" data-aos="fade-up">Address 2:</h5>
-                                        <p class="footer-add-txt" data-aos="fade-up">A 402, Satva Hi-Life, Opp. Madhuvan
-                                            Bungalow, Nr.
-                                            Ratnam Status, Sola,
-                                            Ahmedabad-380060 (Gujarat)</p>
-                                        <h5 class="footer-email-title" data-aos="fade-up">Email ID:</h5>
-                                        <a class="footer-email-txt" href="mailto:info@izonpeb.com"
-                                            data-aos="fade-up">info@izonpeb.com</a>
-                                        <h5 class="footer-contact-title" data-aos="fade-up">Contact:</h5>
-                                        <a class="footer-contact-txt" href="tel:+919725768646" data-aos="fade-up"
-                                            data-aos-delay="300">+91 97257 68646</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="contact-section">
+        <div class="container contact-container">
+          <div
+            class="row justify-content-center contact-info"
+            style="font-family: urbanist"
+          >
+            <div class="col-md-3 contact-logo">
+              <img
+                src="Assets/images/Logo2.png"
+                data-aos="fade-up"
+                alt="Company Logo"
+              />
             </div>
+            <div class="col-md-9">
+              <div class="card contact-card">
+                <div class="card-body">
+                  <div class="row" style="color: white">
+                    <div class="col-md-6">
+                      <h5 class="footer-add-title" data-aos="fade-up">
+                        Address 1:
+                      </h5>
+                      <p class="footer-add-txt" data-aos="fade-up">
+                        A 402, Satva Hi-Life, Opp. Madhuvan Bungalow, Nr. Ratnam
+                        Status, Sola, Ahmedabad-380060 (Gujarat)
+                      </p>
+                      <h5 class="footer-add-title" data-aos="fade-up">
+                        Product:
+                      </h5>
+                      <ul>
+                        <li class="footer-pro-txt" data-aos="fade-up">
+                          Building with Mezzanines
+                        </li>
+                        <li class="footer-pro-txt" data-aos="fade-up">
+                          Multi-storeyed buildings
+                        </li>
+                        <li class="footer-pro-txt" data-aos="fade-up">
+                          Sandwich PU/PIR Panels
+                        </li>
+                        <li class="footer-pro-txt" data-aos="fade-up">
+                          Rockwool Fireproof Panels
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 class="footer-add-title" data-aos="fade-up">
+                        Address 2:
+                      </h5>
+                      <p class="footer-add-txt" data-aos="fade-up">
+                        A 402, Satva Hi-Life, Opp. Madhuvan Bungalow, Nr. Ratnam
+                        Status, Sola, Ahmedabad-380060 (Gujarat)
+                      </p>
+                      <h5 class="footer-email-title" data-aos="fade-up">
+                        Email ID:
+                      </h5>
+                      <a
+                        class="footer-email-txt"
+                        href="mailto:info@izonpeb.com"
+                        data-aos="fade-up"
+                        >info@izonpeb.com</a
+                      >
+                      <h5 class="footer-contact-title" data-aos="fade-up">
+                        Contact:
+                      </h5>
+                      <a
+                        class="footer-contact-txt"
+                        href="tel:+919725768646"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        >+91 97257 68646</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="Assets/js/aos.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const navLinks = document.querySelectorAll('.nav-link');
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const navLinks = document.querySelectorAll(".nav-link");
 
-            navLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    // Remove 'active' class from all nav items
-                    navLinks.forEach(nav => nav.parentElement.classList.remove('active'));
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            // Remove 'active' class from all nav items
+            navLinks.forEach((nav) =>
+              nav.parentElement.classList.remove("active")
+            );
 
-                    // Add 'active' class to the clicked nav item
-                    this.parentElement.classList.add('active');
-                });
-            });
+            // Add 'active' class to the clicked nav item
+            this.parentElement.classList.add("active");
+          });
         });
+      });
 
-        AOS.init({
-            once: true
-        });
+      AOS.init({
+        once: true,
+      });
     </script>
-</body>
-
+  </body>
 </html>
