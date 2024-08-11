@@ -1898,13 +1898,7 @@
 
 
 .about-izon .about-izon-title {
-    font-family: Urbanist;
-    font-size: 38px;
-    font-weight: 700;
-    text-align: left;
     color: var(--txt-lightred);
-    /* margin-top: 30px; */
-    letter-spacing: 1px;
 }
 
 .about-izon .about-izon-line {
@@ -1930,7 +1924,7 @@
 }
 
 .about-izon {
-    margin-top: 50px;
+    margin-block: 100px;
 }
 
 .about-izon .about-izon-img {
@@ -1967,7 +1961,6 @@
 
     .about-izon .about-izon-title {
         margin-top: 15px;
-        font-family: Urbanist;
         font-size: 28px;
     }
 
@@ -3270,9 +3263,7 @@ color: var(--txt-lightred);
 
 .type-structural {
     margin-top: 100px;
-    margin-bottom: 50px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 40px;
     color: #a9a9a9;
     font-weight: 700;
 }
@@ -3358,8 +3349,9 @@ color: var(--txt-lightred);
     margin-bottom: -30px;
 }
 
-advantage-img-box{
-    overflow: scroll;
+.advantage-img-box{
+    /* overflow: hidden; */
+    /* height: 100%; */
 }
 
 .advantage-img img {
@@ -3443,27 +3435,13 @@ advantage-img-box{
     --------------------------------------------------------------------------*/
 
 .our-product-subtitle {
-    margin-top: 40px;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
     color: var(--bg-grey);
 }
 
 .product-bg-img {
     width: 95%;
-    margin-left: 5%;
     border-radius: 10px;
     box-shadow: 0px 7px 10px 0px #00000040;
-}
-
-.our-products-para1 {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    color: #000000;
 }
 
 .our-products-para1 span {
@@ -3471,19 +3449,12 @@ advantage-img-box{
 }
 
 .multi-stored-products {
-    margin-top: 70px;
-    background-color: var(--txt-lightred);
+    background-color: var(--txt-lightgrey);
     padding: 50px 0px;
 }
 
 .multi-stored-products .multi-stored-title {
-    font-family: Urbanist;
-    font-size: 38px;
-    font-weight: 700;
-    text-align: left;
-    color: var(--txt-white);
-    letter-spacing: 1px;
-    margin-bottom: 0px;
+    color: var(--txt-lightred);
 }
 
 .multi-line {
@@ -3509,23 +3480,16 @@ advantage-img-box{
     text-align: left;
 }
 
-.multi-stored-txt {
-    width: 90%;
-}
-
-.multi-stored-img {
-    width: 95%;
-}
-
 .multi-bg-img {
+    object-fit: cover;
     width: 95%;
+    height: 100% !important;
     border-radius: 10px;
     box-shadow: 0px 7px 10px 0px #00000040;
 }
 
 .products-structre-type {
-    margin-top: 4%;
-    width: 90%;
+    margin-block: 100px;
 }
 
 @media screen and (max-width: 770px) and (min-width: 431px) {
