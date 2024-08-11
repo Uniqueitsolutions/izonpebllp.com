@@ -734,7 +734,8 @@
 
 
 .what-section {
-    margin-top: 60px;
+    margin-top: 100px;
+    margin-bottom: 150px;
     padding-right: 40px;
     /* max-height: 750px; */
 }
@@ -888,7 +889,7 @@
     --------------------------------------------------------------------------*/
 
 .our-manufactur {
-    margin-top: 80px;
+    margin-top: 100px !important;
 }
 
 .our-manufactur .our-title {
@@ -1868,6 +1869,10 @@
     margin: 0;
     width: 66px;
     height: 60px;
+}
+
+.nav-link:hover {
+    color: var(--txt-lightred);
 }
 
 .nav-item.active .nav-link {
@@ -3708,6 +3713,10 @@ color: var(--txt-lightred);
     box-shadow: 4px 0px 4px 0px #00000040;
 }
 
+.input-file{
+    color: var(--txt-lightred) !important;
+}
+
 #floatInput {
     color: var(--txt-lightred);
     font-weight: 400;
@@ -4010,6 +4019,10 @@ color: var(--txt-lightred);
     padding-bottom:104px;
     /* background:#f2f2f2; */
     margin: 40px;
+}
+
+.project-main{
+    margin-block: 100px;
 }
 
   /* @media only screen and (min-width: 992px) {
