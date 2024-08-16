@@ -3529,13 +3529,19 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 426px) {
+  .product-bg-img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px !important;
+  }
+
   .about-izon .about-izon-line {
     margin-left: -13%;
   }
 
   .multi-stored-products {
-    flex-direction: column-reverse;
+    padding: 10px 0px;
   }
 
   .multi-stored-products .multi-stored-title {
@@ -3557,6 +3563,14 @@
 
   .multi-stored-txt {
     margin-top: 10%;
+  }
+
+  .our-product-subtitle {
+    font-size: 25px;
+  }
+
+  .our-products-para {
+    font-size: 16px;
   }
 }
 
