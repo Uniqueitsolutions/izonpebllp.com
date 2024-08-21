@@ -24,7 +24,7 @@
 }
 
 .navbar {
-  background: var(--txt-white);
+  /* background: var(--txt-white); */
   padding: 12px;
   box-shadow: 0 0 24px 0px #00000047;
   border-radius: 12px;
@@ -53,8 +53,12 @@
   width: 48px;
 }
 
+.navItems {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 .navbar .navItems ul li {
-  font-family: Urbanist;
   font-size: 20px;
   font-weight: 600;
   line-height: 13px;
@@ -96,7 +100,7 @@
 
   .navItems {
     z-index: 100;
-    background-color: var(--txt-white);
+    /* background: rgba(255, 255, 255, 0.8); */
     padding-top: 9px;
     margin-top: 20px;
   }
@@ -268,8 +272,11 @@
 
     --------------------------------------------------------------------------*/
 
-.about-section .aboout-text {
-  font-family: Urbanist;
+.about-section {
+  margin-block: 100px;
+}
+
+.about-section .about-text {
   margin-top: 100px;
   padding-left: 68px;
   font-size: 48px;
@@ -293,7 +300,7 @@
   width: auto;
   padding-top: 28px;
   padding-left: 68px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 31px;
   text-align: left;
@@ -317,7 +324,6 @@
 }
 
 .about-section .about-text {
-  font-family: Urbanist, sans-serif;
   margin-top: 100px;
   padding-left: 68px;
   font-size: 48px;
@@ -335,7 +341,7 @@
   margin-left: -10px;
 }
 
-.about-section .about-para {
+/* .about-section .about-para {
   font-family: Poppins, sans-serif;
   width: auto;
   padding-top: 28px;
@@ -344,7 +350,7 @@
   font-weight: 400;
   line-height: 31px;
   text-align: left;
-}
+} */
 
 /* .about-section .about-btn {
     font-family: Urbanist, sans-serif;
@@ -898,7 +904,7 @@
     --------------------------------------------------------------------------*/
 
 .our-manufactur {
-  /* margin-top: 100px !important; */
+  margin-top: 10vw;
 }
 
 .our-manufactur .our-title {
@@ -916,6 +922,10 @@
   font-size: 16px;
   font-weight: 600;
   color: var(--bg-grey);
+}
+
+.our-manufactur-cards {
+  margin-bottom: 10vw;
 }
 
 .our-cards {
@@ -1396,7 +1406,7 @@
 
 .clients-title {
   margin-top: 50px;
-  font-size: 39px;
+  font-size: 36px;
   font-weight: 800;
   color: var(--txt-lightred);
 }
@@ -3212,7 +3222,7 @@
     --------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------
 
-                                About PEBQ start
+                                About PEB start
 
     --------------------------------------------------------------------------*/
 
@@ -3543,7 +3553,7 @@
 
 /* ---------------------------------------------------------------------------
 
-                                About PEBQ end
+                                About PEB end
 
     --------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------
@@ -4081,7 +4091,7 @@
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8) !important;
   color: #000000 !important;
 }
 
@@ -4209,7 +4219,7 @@
     --------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------------
 
-                                About PEBQ start
+                                About PEB start
 
     --------------------------------------------------------------------------*/
 
