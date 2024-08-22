@@ -16,6 +16,7 @@
   --txt-lightgrey: #58595b38;
   --bg-grey: #58595b;
   --grey-border: rgb(231, 231, 233);
+  --section-margin: 7vw;
 }
 
 * {
@@ -273,7 +274,7 @@
     --------------------------------------------------------------------------*/
 
 .about-section {
-  margin-block: 100px;
+  margin-block: var(--section-margin);
 }
 
 .about-section .about-text {
@@ -904,7 +905,7 @@
     --------------------------------------------------------------------------*/
 
 .our-manufactur {
-  margin-top: 10vw;
+  margin-top: var(--section-margin);
 }
 
 .our-manufactur .our-title {
@@ -925,7 +926,7 @@
 }
 
 .our-manufactur-cards {
-  margin-bottom: 10vw;
+  margin-bottom: var(--section-margin);
 }
 
 .our-cards {
@@ -1101,7 +1102,7 @@
 } */
 
 .bulding-section .bulding-txt .bulding-title {
-  /* font-size: 34px; */
+  font-size: 48px;
   /* font-weight: 700; */
   color: var(--txt-lightred);
   /* margin-top: 65px; */
@@ -1110,7 +1111,7 @@
 .bulding-section .bulding-txt .bulding-para1 {
   font-family: Poppins;
   /* font-size: 16px; */
-  font-weight: 500;
+  /* font-weight: 500; */
   margin-top: 50px;
   width: 460px;
   /* responsive ma width ne kadhi nakhvanai 6e etle set thai jase component */
@@ -1391,6 +1392,7 @@
   margin-top: 50px;
   padding-left: 10vw;
   padding-right: 10vw;
+  margin-bottom: var(--section-margin);
 }
 
 /* ---------------------------------------------------------------------------
@@ -1949,6 +1951,7 @@
 
 .about-izon .about-izon-title {
   color: var(--txt-lightred);
+  font-size: 48px;
 }
 
 .about-izon .about-izon-line {
@@ -1974,7 +1977,7 @@
 }
 
 .about-izon {
-  margin-block: 100px;
+  margin: var(--section-margin) 0;
 }
 
 .about-izon .about-izon-img {
@@ -2042,7 +2045,6 @@
   /* line-height: 15px; */
   text-align: left;
   color: var(--txt-lightred);
-  margin-top: 100px;
   margin-bottom: 50px;
   margin-inline: 20px;
 }
@@ -2358,9 +2360,7 @@
     --------------------------------------------------------------------------*/
 
 .ups-section {
-  /* Width: 100%;
-        Height: 468px; */
-  margin-bottom: 50px;
+  margin: var(--section-margin) 0;
   background: var(--txt-lightgrey);
 }
 
@@ -2553,7 +2553,7 @@
 }
 
 .approved-section {
-  margin-bottom: 50px;
+  margin-bottom: var(--section-margin);
 }
 
 @media screen and (max-width: 376px) {
@@ -2701,6 +2701,7 @@
 
 .structural-steel {
   margin-top: 50px;
+  margin-bottom: var(--section-margin);
 }
 
 .structural-steel li::marker {
@@ -2712,11 +2713,12 @@
 .structural-title {
   color: var(--txt-lightred);
   font-weight: 700;
+  font-size: 36px;
 }
 
 .structural-paragraph {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  /* font-weight: 400; */
 }
 
 @media screen and (max-width: 430px) {
@@ -2774,19 +2776,32 @@
   border-radius: 10px;
 }
 
+.about-members {
+  margin: var(--section-margin) 0;
+}
+
 .mainfram-title span {
   padding: 0;
 }
 
 .mainfram-title {
   color: var(--txt-lightred);
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .mainfram-txt {
-  margin-top: 20px;
   margin-bottom: 50px;
+}
+
+.mainfram-txt .mainfram-line {
+  border: 3px solid var(--txt-lightred);
+  border-radius: 3px;
+  width: 200px;
+  height: 0px;
+  border: 3px 0px 0px 0px;
+  margin-top: 17px;
+  margin-left: -10px;
 }
 
 .mainfram-lists li::marker {
@@ -2798,6 +2813,10 @@
 .mainfram-lists li {
   font-size: 18px;
   font-weight: 400;
+}
+
+.mainfram-para {
+  font-size: 16px;
 }
 
 /* ---------------------------------------------------------------------------
@@ -2813,12 +2832,9 @@
     --------------------------------------------------------------------------*/
 
 .secpndary-title {
-  font-size: 32px;
-  color: var(--txt-white);
-  background-color: var(--txt-lightred);
-  padding: 15px 0;
-  margin: 0;
-  border-radius: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--txt-lightred);
 }
 
 @media screen and (max-width: 425px) {
@@ -2829,6 +2845,7 @@
 
 .secondary-cards {
   margin-top: 20px;
+  margin-bottom: var(--section-margin);
 }
 
 .secondary-card {
@@ -2886,8 +2903,7 @@
 }
 
 .roof-wall {
-  margin-top: 50px;
-  width: 90%;
+  margin: var(--section-margin) 0;
 }
 
 .roof-line {
@@ -2923,6 +2939,8 @@
 
 .roof-paint-title {
   color: var(--txt-lightred);
+  font-weight: 700;
+  font-size: 36px;
 }
 
 .claading-main {
@@ -2952,6 +2970,10 @@
 
 .puf {
   margin-bottom: 50px;
+}
+
+.roof-paint {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 850px) {
@@ -4123,6 +4145,7 @@
   padding: 0 90px;
   text-align: center;
   background-attachment: fixed;
+  margin: var(--section-margin) 0;
 }
 
 .color-bar,
