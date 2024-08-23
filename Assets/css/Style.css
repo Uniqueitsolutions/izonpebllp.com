@@ -16,7 +16,7 @@
   --txt-lightgrey: #58595b38;
   --bg-grey: #58595b;
   --grey-border: rgb(231, 231, 233);
-  --section-margin: 7vw;
+  --section-margin: 100px;
 }
 
 * {
@@ -2777,7 +2777,7 @@
 }
 
 .about-members {
-  margin: var(--section-margin) 0;
+  margin: calc(var(--section-margin) / 2) 0;
 }
 
 .mainfram-title span {
@@ -2837,7 +2837,7 @@
   color: var(--txt-lightred);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .secpndary-title {
     font-size: 25px;
   }
@@ -3253,6 +3253,10 @@
   font-weight: 700;
 }
 
+.about-peb-para {
+  margin: calc(var(--section-margin) / 2) 0;
+}
+
 @media screen and (max-width: 768px) {
   .aboutPEBQ-title {
     margin-top: 20px;
@@ -3309,6 +3313,7 @@
   margin-bottom: 40px;
   color: var(--txt-lightred);
   font-weight: 700;
+  font-size: 36px;
 }
 
 .type-structural-card {
@@ -3355,6 +3360,10 @@
 }
 
 @media screen and (max-width: 426px) {
+  .type-structural {
+    font-size: 25px;
+  }
+
   .type-structural-card {
     height: auto;
     /* margin-top: 140px !important; */
@@ -3586,6 +3595,7 @@
 
 .our-product-subtitle {
   color: var(--bg-grey);
+  font-size: 36px;
 }
 
 .product-bg-img {
@@ -4526,12 +4536,16 @@
 }
 
 .choose-us-thumb img {
-  max-width: 120%;
+  max-width: 100%;
 }
 
 ul.list-details h4 {
   color: #58595b;
   font-weight: 700;
+}
+
+.choose-us-style-one-area {
+  margin: var(--section-margin) 0;
 }
 
 .choose-us-style-one-area ul.list-details li {
