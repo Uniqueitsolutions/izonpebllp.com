@@ -278,7 +278,7 @@
 }
 
 .about-section .about-text {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   padding-left: 68px;
   font-size: 48px;
   font-weight: 700;
@@ -322,15 +322,6 @@
 
 .about-section .about-btn:hover {
   box-shadow: 10px 10px 10px whitesmoke;
-}
-
-.about-section .about-text {
-  margin-top: 100px;
-  padding-left: 68px;
-  font-size: 48px;
-  font-weight: 700;
-  text-align: left;
-  color: var(--txt-lightred);
 }
 
 .about-section .about-line {
@@ -3599,7 +3590,9 @@
 }
 
 .product-bg-img {
-  width: 95%;
+  width: 95% !important;
+  height: 400px !important;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 7px 10px 0px #00000040;
 }
