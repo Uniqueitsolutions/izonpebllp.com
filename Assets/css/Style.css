@@ -81,6 +81,10 @@
   color: var(--txt-white);
 }
 
+.dropdown-item-link :active {
+  background-color: #000000 !important;
+}
+
 @media (max-width: 991.98px) {
   .navbar-nav {
     text-align: center;
@@ -474,6 +478,7 @@
   left: 43%;
   height: 485px;
   z-index: 0;
+  border-radius: 10px;
 }
 
 .mobile-abour-imgs .mobile-img2 {
@@ -483,6 +488,7 @@
   position: absolute;
   right: 47%;
   top: 10%;
+  border-radius: 10px;
 }
 
 .mobile-abour-imgs .mobile-img3 {
@@ -492,6 +498,7 @@
   width: 431px;
   height: 278px;
   z-index: 0;
+  border-radius: 10px;
 }
 
 @media (max-width: 536px) and (min-width: 500px) {
@@ -1441,7 +1448,7 @@
   .our-client1 {
     width: auto;
     height: auto;
-    margin: auto;
+    margin: 10%;
   }
 
   .clients-title {
